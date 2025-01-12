@@ -9,7 +9,7 @@ class Client(Node):
     def __init__(self):
         super().__init__('Client')
         self.Client = self.create_client(AddTwoInts, '/ServiceClient')
-        while not self.Client.wait_for_service(timeout_sec = 1.0): 
+        while not self.Client.wait_for_service(timeout_sec = 1.0):
             self.get_logger().info("Service not available, try again")
         self.req = AddTwoInts.Request()
 
