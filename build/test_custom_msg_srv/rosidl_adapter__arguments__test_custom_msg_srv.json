@@ -1,0 +1,8 @@
+{
+  "package_name": "test_custom_msg_srv",
+  "non_idl_tuples": [
+    "/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv:msg/Num.msg",
+    "/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv:msg/Sphere.msg",
+    "/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv:srv/AddThreeInts.srv"
+  ]
+}

@@ -1,0 +1,26 @@
+/home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/test1/test1.egg-info/PKG-INFO
+writing dependency_links to ../../build/test1/test1.egg-info/dependency_links.txt
+writing entry points to ../../build/test1/test1.egg-info/entry_points.txt
+writing requirements to ../../build/test1/test1.egg-info/requires.txt
+writing top-level names to ../../build/test1/test1.egg-info/top_level.txt
+reading manifest file '../../build/test1/test1.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/test1/test1.egg-info/SOURCES.txt'
+running build
+running build_py
+copying test1/__init__.py -> /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1
+copying test1/test_node.py -> /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1
+running install
+running install_lib
+running install_data
+copying resource/test1 -> /home/lydia-chheng/ros2_ws/install/test1/share/ament_index/resource_index/packages
+copying package.xml -> /home/lydia-chheng/ros2_ws/install/test1/share/test1
+running install_egg_info
+removing '/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/test1/test1.egg-info to /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1-0.0.0-py3.10.egg-info
+running install_scripts
+Installing test_node script to /home/lydia-chheng/ros2_ws/install/test1/lib/test1
+writing list of installed files to '/home/lydia-chheng/ros2_ws/build/test1/install.log'

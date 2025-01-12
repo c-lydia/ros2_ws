@@ -1,0 +1,6 @@
+{
+  "package_name": "action_interface",
+  "non_idl_tuples": [
+    "/home/lydia-chheng/ros2_ws/src/action_interface:action/Fibonacci.action"
+  ]
+}

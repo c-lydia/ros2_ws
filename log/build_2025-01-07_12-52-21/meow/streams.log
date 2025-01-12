@@ -1,0 +1,25 @@
+[4.713s] Invoking command in '/home/lydia-chheng/ros2_ws/src/meow': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/meow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/meow build --build-base /home/lydia-chheng/ros2_ws/build/meow/build install --record /home/lydia-chheng/ros2_ws/build/meow/install.log --single-version-externally-managed install_data
+[5.792s] /home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[5.793s]   warnings.warn(msg)
+[6.647s] running egg_info
+[6.786s] writing ../../build/meow/meow.egg-info/PKG-INFO
+[6.789s] writing dependency_links to ../../build/meow/meow.egg-info/dependency_links.txt
+[6.796s] writing requirements to ../../build/meow/meow.egg-info/requires.txt
+[6.796s] writing top-level names to ../../build/meow/meow.egg-info/top_level.txt
+[7.133s] reading manifest file '../../build/meow/meow.egg-info/SOURCES.txt'
+[7.134s] adding license file 'LICENSE'
+[7.141s] writing manifest file '../../build/meow/meow.egg-info/SOURCES.txt'
+[7.145s] running build
+[7.145s] running build_py
+[7.145s] copying meow/__init__.py -> /home/lydia-chheng/ros2_ws/build/meow/build/lib/meow
+[7.149s] running install
+[7.200s] running install_lib
+[7.410s] running install_data
+[7.411s] copying resource/meow -> /home/lydia-chheng/ros2_ws/install/meow/share/ament_index/resource_index/packages
+[7.422s] copying package.xml -> /home/lydia-chheng/ros2_ws/install/meow/share/meow
+[7.422s] running install_egg_info
+[7.624s] removing '/home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages/meow-0.0.0-py3.10.egg-info' (and everything under it)
+[7.627s] Copying ../../build/meow/meow.egg-info to /home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages/meow-0.0.0-py3.10.egg-info
+[7.642s] running install_scripts
+[8.658s] writing list of installed files to '/home/lydia-chheng/ros2_ws/build/meow/install.log'
+[9.814s] Invoked command in '/home/lydia-chheng/ros2_ws/src/meow' returned '0': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/meow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/meow build --build-base /home/lydia-chheng/ros2_ws/build/meow/build install --record /home/lydia-chheng/ros2_ws/build/meow/install.log --single-version-externally-managed install_data

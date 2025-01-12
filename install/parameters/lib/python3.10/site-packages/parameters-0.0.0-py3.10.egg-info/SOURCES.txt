@@ -1,0 +1,17 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/parameters/parameters.egg-info/PKG-INFO
+../../build/parameters/parameters.egg-info/SOURCES.txt
+../../build/parameters/parameters.egg-info/dependency_links.txt
+../../build/parameters/parameters.egg-info/entry_points.txt
+../../build/parameters/parameters.egg-info/requires.txt
+../../build/parameters/parameters.egg-info/top_level.txt
+../../build/parameters/parameters.egg-info/zip-safe
+parameters/__init__.py
+parameters/parameters.py
+resource/parameters
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

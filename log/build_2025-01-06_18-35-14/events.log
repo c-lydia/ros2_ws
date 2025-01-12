@@ -1,0 +1,12 @@
+[0.000000] (-) TimerEvent: {}
+[0.000453] (-) JobUnselected: {'identifier': 'action_interface'}
+[0.000564] (-) JobUnselected: {'identifier': 'meow'}
+[0.000625] (-) JobUnselected: {'identifier': 'parameters'}
+[0.000676] (-) JobUnselected: {'identifier': 'test1'}
+[0.000725] (-) JobUnselected: {'identifier': 'test2'}
+[0.000774] (-) JobUnselected: {'identifier': 'test_custom_msg_srv'}
+[0.000822] (-) JobUnselected: {'identifier': 'test_srv_cli'}
+[0.000874] (test_pub_sub) JobQueued: {'identifier': 'test_pub_sub', 'dependencies': OrderedDict([('test_custom_msg_srv', '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv')])}
+[0.000938] (test_pub_sub) JobStarted: {'identifier': 'test_pub_sub'}
+[0.009807] (test_pub_sub) JobEnded: {'identifier': 'test_pub_sub', 'rc': 1}
+[0.020620] (-) EventReactorShutdown: {}

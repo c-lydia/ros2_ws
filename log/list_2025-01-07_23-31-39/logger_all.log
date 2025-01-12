@@ -1,0 +1,135 @@
+[0.410s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/lydia-chheng/ros2_ws']
+[0.410s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/lydia-chheng/ros2_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d5ff2e64a00>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7d5ff2e27bb0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7d5ff2e27bb0>>, mixin_verb=('list',))
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.547s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.547s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.547s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.548s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.549s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lydia-chheng/ros2_ws'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extension 'ignore'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extension 'ignore_ament_install'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extensions ['colcon_pkg']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extension 'colcon_pkg'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extensions ['colcon_meta']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extension 'colcon_meta'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extensions ['ros']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extension 'ros'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extensions ['cmake', 'python']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extension 'cmake'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extension 'python'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extensions ['python_setup_py']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws) by extension 'python_setup_py'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/build) by extension 'ignore'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/build) ignored
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/install) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/install) ignored
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/log) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/log) ignored
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extensions ['colcon_pkg']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extension 'colcon_pkg'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extensions ['colcon_meta']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extension 'colcon_meta'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extensions ['ros']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extension 'ros'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extensions ['cmake', 'python']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extension 'cmake'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extension 'python'
+[0.636s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extensions ['python_setup_py']
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src) by extension 'python_setup_py'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/action_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/action_interface) by extension 'ignore'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/action_interface) by extension 'ignore_ament_install'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/action_interface) by extensions ['colcon_pkg']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/action_interface) by extension 'colcon_pkg'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/action_interface) by extensions ['colcon_meta']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/action_interface) by extension 'colcon_meta'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/action_interface) by extensions ['ros']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/action_interface) by extension 'ros'
+[0.652s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lydia-chheng/ros2_ws/src/action_interface' with type 'ros.ament_cmake' and name 'action_interface'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/meow) by extensions ['ignore', 'ignore_ament_install']
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/meow) by extension 'ignore'
+[0.653s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/meow) by extension 'ignore_ament_install'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/meow) by extensions ['colcon_pkg']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/meow) by extension 'colcon_pkg'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/meow) by extensions ['colcon_meta']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/meow) by extension 'colcon_meta'
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/meow) by extensions ['ros']
+[0.654s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/meow) by extension 'ros'
+[0.658s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lydia-chheng/ros2_ws/src/meow' with type 'ros.ament_python' and name 'meow'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/parameters) by extensions ['ignore', 'ignore_ament_install']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/parameters) by extension 'ignore'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/parameters) by extension 'ignore_ament_install'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/parameters) by extensions ['colcon_pkg']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/parameters) by extension 'colcon_pkg'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/parameters) by extensions ['colcon_meta']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/parameters) by extension 'colcon_meta'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/parameters) by extensions ['ros']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/parameters) by extension 'ros'
+[0.662s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lydia-chheng/ros2_ws/src/parameters' with type 'ros.ament_python' and name 'parameters'
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extensions ['ignore', 'ignore_ament_install']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extension 'ignore'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extension 'ignore_ament_install'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extensions ['colcon_pkg']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extension 'colcon_pkg'
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extensions ['colcon_meta']
+[0.665s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extension 'colcon_meta'
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extensions ['ros']
+[0.666s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extension 'ros'
+[0.666s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'/home/lydia-chheng/ros2_ws/src/test1': Error(s) in package '/home/lydia-chheng/ros2_ws/src/test1/package.xml':
+The manifest contains invalid XML:
+not well-formed (invalid token): line 1, column 0
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extensions ['cmake', 'python']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extension 'cmake'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extension 'python'
+[0.667s] DEBUG:colcon.colcon_core.package_identification:Python package in '/home/lydia-chheng/ros2_ws/src/test1' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extensions ['python_setup_py']
+[0.667s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test1) by extension 'python_setup_py'
+[1.512s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lydia-chheng/ros2_ws/src/test1' with type 'python' and name 'test1'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test2) by extensions ['ignore', 'ignore_ament_install']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test2) by extension 'ignore'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test2) by extension 'ignore_ament_install'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test2) by extensions ['colcon_pkg']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test2) by extension 'colcon_pkg'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test2) by extensions ['colcon_meta']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test2) by extension 'colcon_meta'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test2) by extensions ['ros']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test2) by extension 'ros'
+[1.516s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lydia-chheng/ros2_ws/src/test2' with type 'ros.ament_python' and name 'test2'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv) by extensions ['ignore', 'ignore_ament_install']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv) by extension 'ignore'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv) by extension 'ignore_ament_install'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv) by extensions ['colcon_pkg']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv) by extension 'colcon_pkg'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv) by extensions ['colcon_meta']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv) by extension 'colcon_meta'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv) by extensions ['ros']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv) by extension 'ros'
+[1.519s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv' with type 'ros.ament_cmake' and name 'test_custom_msg_srv'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_pub_sub) by extensions ['ignore', 'ignore_ament_install']
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_pub_sub) by extension 'ignore'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_pub_sub) by extension 'ignore_ament_install'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_pub_sub) by extensions ['colcon_pkg']
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_pub_sub) by extension 'colcon_pkg'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_pub_sub) by extensions ['colcon_meta']
+[1.521s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_pub_sub) by extension 'colcon_meta'
+[1.521s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_pub_sub) by extensions ['ros']
+[1.521s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_pub_sub) by extension 'ros'
+[1.523s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lydia-chheng/ros2_ws/src/test_pub_sub' with type 'ros.ament_python' and name 'test_pub_sub'
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_srv_cli) by extensions ['ignore', 'ignore_ament_install']
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_srv_cli) by extension 'ignore'
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_srv_cli) by extension 'ignore_ament_install'
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_srv_cli) by extensions ['colcon_pkg']
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_srv_cli) by extension 'colcon_pkg'
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_srv_cli) by extensions ['colcon_meta']
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_srv_cli) by extension 'colcon_meta'
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_srv_cli) by extensions ['ros']
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lydia-chheng/ros2_ws/src/test_srv_cli) by extension 'ros'
+[1.527s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lydia-chheng/ros2_ws/src/test_srv_cli' with type 'ros.ament_python' and name 'test_srv_cli'
+[1.527s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

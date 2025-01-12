@@ -1,0 +1,17 @@
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub/subscriber.py
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub/__init__.py
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub/publisher.py
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub/__pycache__/subscriber.cpython-310.pyc
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub/__pycache__/__init__.cpython-310.pyc
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub/__pycache__/publisher.cpython-310.pyc
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/share/ament_index/resource_index/packages/test_pub_sub
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/share/test_pub_sub/package.xml
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub-0.0.0-py3.10.egg-info/top_level.txt
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub-0.0.0-py3.10.egg-info/zip-safe
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub-0.0.0-py3.10.egg-info/SOURCES.txt
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub-0.0.0-py3.10.egg-info/PKG-INFO
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub-0.0.0-py3.10.egg-info/dependency_links.txt
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub-0.0.0-py3.10.egg-info/requires.txt
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub-0.0.0-py3.10.egg-info/entry_points.txt
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/test_pub_sub/publisher
+/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/test_pub_sub/subscriber

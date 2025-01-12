@@ -1,0 +1,28 @@
+[4.252s] Invoking command in '/home/lydia-chheng/ros2_ws/src/test1': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test1 build --build-base /home/lydia-chheng/ros2_ws/build/test1/build install --record /home/lydia-chheng/ros2_ws/build/test1/install.log --single-version-externally-managed install_data
+[5.428s] /home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[5.428s]   warnings.warn(msg)
+[6.462s] running egg_info
+[6.655s] writing ../../build/test1/test1.egg-info/PKG-INFO
+[6.656s] writing dependency_links to ../../build/test1/test1.egg-info/dependency_links.txt
+[6.664s] writing entry points to ../../build/test1/test1.egg-info/entry_points.txt
+[6.664s] writing requirements to ../../build/test1/test1.egg-info/requires.txt
+[6.671s] writing top-level names to ../../build/test1/test1.egg-info/top_level.txt
+[6.933s] reading manifest file '../../build/test1/test1.egg-info/SOURCES.txt'
+[6.934s] adding license file 'LICENSE'
+[6.940s] writing manifest file '../../build/test1/test1.egg-info/SOURCES.txt'
+[6.941s] running build
+[6.942s] running build_py
+[6.948s] copying test1/__init__.py -> /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1
+[6.948s] copying test1/test_node.py -> /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1
+[6.948s] running install
+[6.985s] running install_lib
+[7.129s] running install_data
+[7.131s] copying resource/test1 -> /home/lydia-chheng/ros2_ws/install/test1/share/ament_index/resource_index/packages
+[7.131s] copying package.xml -> /home/lydia-chheng/ros2_ws/install/test1/share/test1
+[7.137s] running install_egg_info
+[7.252s] removing '/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1-0.0.0-py3.10.egg-info' (and everything under it)
+[7.254s] Copying ../../build/test1/test1.egg-info to /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1-0.0.0-py3.10.egg-info
+[7.260s] running install_scripts
+[8.089s] Installing test_node script to /home/lydia-chheng/ros2_ws/install/test1/lib/test1
+[8.090s] writing list of installed files to '/home/lydia-chheng/ros2_ws/build/test1/install.log'
+[9.197s] Invoked command in '/home/lydia-chheng/ros2_ws/src/test1' returned '0': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test1 build --build-base /home/lydia-chheng/ros2_ws/build/test1/build install --record /home/lydia-chheng/ros2_ws/build/test1/install.log --single-version-externally-managed install_data

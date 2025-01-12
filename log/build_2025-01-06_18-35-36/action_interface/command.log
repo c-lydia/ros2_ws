@@ -1,0 +1,6 @@
+Invoking command in '/home/lydia-chheng/ros2_ws/build/action_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lydia-chheng/ros2_ws/src/action_interface -DCMAKE_INSTALL_PREFIX=/home/lydia-chheng/ros2_ws/install/action_interface
+Invoked command in '/home/lydia-chheng/ros2_ws/build/action_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lydia-chheng/ros2_ws/src/action_interface -DCMAKE_INSTALL_PREFIX=/home/lydia-chheng/ros2_ws/install/action_interface
+Invoking command in '/home/lydia-chheng/ros2_ws/build/action_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lydia-chheng/ros2_ws/build/action_interface -- -j4 -l4
+Invoked command in '/home/lydia-chheng/ros2_ws/build/action_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lydia-chheng/ros2_ws/build/action_interface -- -j4 -l4
+Invoking command in '/home/lydia-chheng/ros2_ws/build/action_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lydia-chheng/ros2_ws/build/action_interface
+Invoked command in '/home/lydia-chheng/ros2_ws/build/action_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lydia-chheng/ros2_ws/build/action_interface

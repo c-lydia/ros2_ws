@@ -1,0 +1,38 @@
+/home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+creating ../../build/test_srv_cli/test_srv_cli.egg-info
+writing ../../build/test_srv_cli/test_srv_cli.egg-info/PKG-INFO
+writing dependency_links to ../../build/test_srv_cli/test_srv_cli.egg-info/dependency_links.txt
+writing entry points to ../../build/test_srv_cli/test_srv_cli.egg-info/entry_points.txt
+writing requirements to ../../build/test_srv_cli/test_srv_cli.egg-info/requires.txt
+writing top-level names to ../../build/test_srv_cli/test_srv_cli.egg-info/top_level.txt
+writing manifest file '../../build/test_srv_cli/test_srv_cli.egg-info/SOURCES.txt'
+reading manifest file '../../build/test_srv_cli/test_srv_cli.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/test_srv_cli/test_srv_cli.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli
+copying test_srv_cli/__init__.py -> /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli
+copying test_srv_cli/client.py -> /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli
+copying test_srv_cli/service.py -> /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli
+running install
+running install_lib
+creating /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli
+copying /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli/__init__.py -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli
+copying /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli/client.py -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli
+copying /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli/service.py -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli
+byte-compiling /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli/client.py to client.cpython-310.pyc
+byte-compiling /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli/service.py to service.cpython-310.pyc
+running install_data
+creating /home/lydia-chheng/ros2_ws/install/test_srv_cli/share/ament_index/resource_index/packages
+copying resource/test_srv_cli -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/share/ament_index/resource_index/packages
+copying package.xml -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli
+running install_egg_info
+Copying ../../build/test_srv_cli/test_srv_cli.egg-info to /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli-0.0.0-py3.10.egg-info
+running install_scripts
+Installing client script to /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/test_srv_cli
+Installing service script to /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/test_srv_cli
+writing list of installed files to '/home/lydia-chheng/ros2_ws/build/test_srv_cli/install.log'

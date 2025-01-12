@@ -1,0 +1,945 @@
+[0.000000] (-) TimerEvent: {}
+[0.000299] (action_interface) JobQueued: {'identifier': 'action_interface', 'dependencies': OrderedDict()}
+[0.000348] (meow) JobQueued: {'identifier': 'meow', 'dependencies': OrderedDict()}
+[0.000444] (parameters) JobQueued: {'identifier': 'parameters', 'dependencies': OrderedDict()}
+[0.000505] (test1) JobQueued: {'identifier': 'test1', 'dependencies': OrderedDict()}
+[0.000575] (test2) JobQueued: {'identifier': 'test2', 'dependencies': OrderedDict()}
+[0.000628] (test_custom_msg_srv) JobQueued: {'identifier': 'test_custom_msg_srv', 'dependencies': OrderedDict()}
+[0.000687] (test_srv_cli) JobQueued: {'identifier': 'test_srv_cli', 'dependencies': OrderedDict()}
+[0.000747] (test_pub_sub) JobQueued: {'identifier': 'test_pub_sub', 'dependencies': OrderedDict([('test_custom_msg_srv', '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv')])}
+[0.000821] (test_custom_msg_srv) JobStarted: {'identifier': 'test_custom_msg_srv'}
+[0.011239] (action_interface) JobStarted: {'identifier': 'action_interface'}
+[0.017913] (meow) JobStarted: {'identifier': 'meow'}
+[0.025732] (parameters) JobStarted: {'identifier': 'parameters'}
+[0.037887] (test_custom_msg_srv) JobProgress: {'identifier': 'test_custom_msg_srv', 'progress': 'cmake'}
+[0.038796] (test_custom_msg_srv) Command: {'cmd': ['/usr/bin/cmake', '/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv', '-DCMAKE_INSTALL_PREFIX=/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv'], 'cwd': '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lydia-chheng'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lydia-chheng'), ('OLDPWD', '/home/lydia-chheng'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '1541'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lydia-chheng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lydia-chheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.042355] (action_interface) JobProgress: {'identifier': 'action_interface', 'progress': 'cmake'}
+[0.043140] (action_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/lydia-chheng/ros2_ws/src/action_interface', '-DCMAKE_INSTALL_PREFIX=/home/lydia-chheng/ros2_ws/install/action_interface'], 'cwd': '/home/lydia-chheng/ros2_ws/build/action_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lydia-chheng'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lydia-chheng'), ('OLDPWD', '/home/lydia-chheng'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '1541'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lydia-chheng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lydia-chheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lydia-chheng/ros2_ws/build/action_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098397] (-) TimerEvent: {}
+[0.200489] (-) TimerEvent: {}
+[0.300933] (-) TimerEvent: {}
+[0.401396] (-) TimerEvent: {}
+[0.501902] (-) TimerEvent: {}
+[0.583916] (test_custom_msg_srv) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.584271] (test_custom_msg_srv) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.584485] (test_custom_msg_srv) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.584706] (test_custom_msg_srv) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.584902] (test_custom_msg_srv) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.585094] (test_custom_msg_srv) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.585286] (test_custom_msg_srv) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.586424] (test_custom_msg_srv) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.588251] (test_custom_msg_srv) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.588748] (test_custom_msg_srv) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.589241] (test_custom_msg_srv) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.589462] (test_custom_msg_srv) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.590449] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.590646] (action_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.590926] (action_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.591119] (action_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.591303] (action_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.591504] (action_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.591683] (action_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.591855] (action_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.592036] (action_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.592225] (action_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.602028] (-) TimerEvent: {}
+[0.616880] (action_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.617476] (action_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.618787] (action_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.623517] (action_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.702269] (-) TimerEvent: {}
+[0.805477] (-) TimerEvent: {}
+[0.905918] (-) TimerEvent: {}
+[1.006371] (-) TimerEvent: {}
+[1.106901] (-) TimerEvent: {}
+[1.207328] (-) TimerEvent: {}
+[1.307815] (-) TimerEvent: {}
+[1.408276] (-) TimerEvent: {}
+[1.455558] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.461582] (action_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.508389] (-) TimerEvent: {}
+[1.608857] (-) TimerEvent: {}
+[1.648733] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.696531] (action_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.702754] (action_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.708973] (-) TimerEvent: {}
+[1.716661] (action_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.727796] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.740042] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.772476] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.804558] (test_custom_msg_srv) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.809079] (-) TimerEvent: {}
+[1.813008] (action_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.852120] (test_custom_msg_srv) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.909206] (-) TimerEvent: {}
+[1.977566] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.002541] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.009341] (-) TimerEvent: {}
+[2.093868] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.100053] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.109468] (-) TimerEvent: {}
+[2.209913] (-) TimerEvent: {}
+[2.296463] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.310024] (-) TimerEvent: {}
+[2.354192] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.412499] (-) TimerEvent: {}
+[2.454551] (test_custom_msg_srv) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.474550] (test_custom_msg_srv) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.512626] (-) TimerEvent: {}
+[2.613163] (-) TimerEvent: {}
+[2.637939] (test_custom_msg_srv) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.639225] (test_custom_msg_srv) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.667310] (meow) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/meow', 'build', '--build-base', '/home/lydia-chheng/ros2_ws/build/meow/build', 'install', '--record', '/home/lydia-chheng/ros2_ws/build/meow/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lydia-chheng/ros2_ws/src/meow', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lydia-chheng', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lydia-chheng', 'OLDPWD': '/home/lydia-chheng', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_US.UTF-8', 'SYSTEMD_EXEC_PID': '1541', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lydia-chheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lydia-chheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lydia-chheng/ros2_ws/build/meow', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lydia-chheng/ros2_ws/build/meow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.678508] (action_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.713267] (-) TimerEvent: {}
+[2.718726] (parameters) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/parameters', 'build', '--build-base', '/home/lydia-chheng/ros2_ws/build/parameters/build', 'install', '--record', '/home/lydia-chheng/ros2_ws/build/parameters/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lydia-chheng/ros2_ws/src/parameters', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lydia-chheng', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lydia-chheng', 'OLDPWD': '/home/lydia-chheng', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_US.UTF-8', 'SYSTEMD_EXEC_PID': '1541', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lydia-chheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lydia-chheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lydia-chheng/ros2_ws/build/parameters', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lydia-chheng/ros2_ws/build/parameters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.813388] (-) TimerEvent: {}
+[2.814639] (test_custom_msg_srv) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.817581] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.913481] (-) TimerEvent: {}
+[2.947021] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[3.013594] (-) TimerEvent: {}
+[3.090272] (meow) StderrLine: {'line': b"/home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[3.090671] (meow) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[3.113707] (-) TimerEvent: {}
+[3.145850] (parameters) StderrLine: {'line': b"/home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[3.146208] (parameters) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[3.182114] (action_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.215969] (-) TimerEvent: {}
+[3.316417] (-) TimerEvent: {}
+[3.416895] (-) TimerEvent: {}
+[3.421106] (meow) StdoutLine: {'line': b'running egg_info\n'}
+[3.476930] (parameters) StdoutLine: {'line': b'running egg_info\n'}
+[3.479453] (meow) StdoutLine: {'line': b'creating ../../build/meow/meow.egg-info\n'}
+[3.479728] (meow) StdoutLine: {'line': b'writing ../../build/meow/meow.egg-info/PKG-INFO\n'}
+[3.479923] (meow) StdoutLine: {'line': b'writing dependency_links to ../../build/meow/meow.egg-info/dependency_links.txt\n'}
+[3.480122] (meow) StdoutLine: {'line': b'writing requirements to ../../build/meow/meow.egg-info/requires.txt\n'}
+[3.480310] (meow) StdoutLine: {'line': b'writing top-level names to ../../build/meow/meow.egg-info/top_level.txt\n'}
+[3.480518] (meow) StdoutLine: {'line': b"writing manifest file '../../build/meow/meow.egg-info/SOURCES.txt'\n"}
+[3.519490] (-) TimerEvent: {}
+[3.529911] (parameters) StdoutLine: {'line': b'creating ../../build/parameters/parameters.egg-info\n'}
+[3.531129] (parameters) StdoutLine: {'line': b'writing ../../build/parameters/parameters.egg-info/PKG-INFO\n'}
+[3.531390] (parameters) StdoutLine: {'line': b'writing dependency_links to ../../build/parameters/parameters.egg-info/dependency_links.txt\n'}
+[3.531694] (parameters) StdoutLine: {'line': b'writing entry points to ../../build/parameters/parameters.egg-info/entry_points.txt\n'}
+[3.531954] (parameters) StdoutLine: {'line': b'writing requirements to ../../build/parameters/parameters.egg-info/requires.txt\n'}
+[3.532218] (parameters) StdoutLine: {'line': b'writing top-level names to ../../build/parameters/parameters.egg-info/top_level.txt\n'}
+[3.532499] (parameters) StdoutLine: {'line': b"writing manifest file '../../build/parameters/parameters.egg-info/SOURCES.txt'\n"}
+[3.588038] (meow) StdoutLine: {'line': b"reading manifest file '../../build/meow/meow.egg-info/SOURCES.txt'\n"}
+[3.588500] (meow) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[3.591071] (meow) StdoutLine: {'line': b"writing manifest file '../../build/meow/meow.egg-info/SOURCES.txt'\n"}
+[3.591476] (meow) StdoutLine: {'line': b'running build\n'}
+[3.591692] (meow) StdoutLine: {'line': b'running build_py\n'}
+[3.591947] (meow) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/build/meow/build/lib/meow\n'}
+[3.592441] (meow) StdoutLine: {'line': b'copying meow/__init__.py -> /home/lydia-chheng/ros2_ws/build/meow/build/lib/meow\n'}
+[3.593129] (meow) StdoutLine: {'line': b'running install\n'}
+[3.610185] (meow) StdoutLine: {'line': b'running install_lib\n'}
+[3.622479] (-) TimerEvent: {}
+[3.641212] (parameters) StdoutLine: {'line': b"reading manifest file '../../build/parameters/parameters.egg-info/SOURCES.txt'\n"}
+[3.641769] (parameters) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[3.644508] (parameters) StdoutLine: {'line': b"writing manifest file '../../build/parameters/parameters.egg-info/SOURCES.txt'\n"}
+[3.644909] (parameters) StdoutLine: {'line': b'running build\n'}
+[3.645222] (parameters) StdoutLine: {'line': b'running build_py\n'}
+[3.645668] (parameters) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/build/parameters/build/lib/parameters\n'}
+[3.646210] (parameters) StdoutLine: {'line': b'copying parameters/__init__.py -> /home/lydia-chheng/ros2_ws/build/parameters/build/lib/parameters\n'}
+[3.646685] (parameters) StdoutLine: {'line': b'copying parameters/parameters.py -> /home/lydia-chheng/ros2_ws/build/parameters/build/lib/parameters\n'}
+[3.647532] (parameters) StdoutLine: {'line': b'running install\n'}
+[3.665622] (meow) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages/meow\n'}
+[3.667809] (meow) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/meow/build/lib/meow/__init__.py -> /home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages/meow\n'}
+[3.668247] (meow) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages/meow/__init__.py to __init__.cpython-310.pyc\n'}
+[3.669168] (meow) StdoutLine: {'line': b'running install_data\n'}
+[3.670122] (meow) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/meow/share/ament_index/resource_index/packages\n'}
+[3.670369] (meow) StdoutLine: {'line': b'copying resource/meow -> /home/lydia-chheng/ros2_ws/install/meow/share/ament_index/resource_index/packages\n'}
+[3.670941] (meow) StdoutLine: {'line': b'copying package.xml -> /home/lydia-chheng/ros2_ws/install/meow/share/meow\n'}
+[3.671155] (meow) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.674334] (parameters) StdoutLine: {'line': b'running install_lib\n'}
+[3.724497] (-) TimerEvent: {}
+[3.728003] (meow) StdoutLine: {'line': b'Copying ../../build/meow/meow.egg-info to /home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages/meow-0.0.0-py3.10.egg-info\n'}
+[3.729244] (parameters) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages/parameters\n'}
+[3.729939] (parameters) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/parameters/build/lib/parameters/__init__.py -> /home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages/parameters\n'}
+[3.730668] (meow) StdoutLine: {'line': b'running install_scripts\n'}
+[3.731017] (parameters) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/parameters/build/lib/parameters/parameters.py -> /home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages/parameters\n'}
+[3.732836] (parameters) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages/parameters/__init__.py to __init__.cpython-310.pyc\n'}
+[3.734866] (parameters) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages/parameters/parameters.py to parameters.cpython-310.pyc\n'}
+[3.735297] (parameters) StdoutLine: {'line': b'running install_data\n'}
+[3.736228] (parameters) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/parameters/share/ament_index/resource_index/packages\n'}
+[3.737076] (parameters) StdoutLine: {'line': b'copying resource/parameters -> /home/lydia-chheng/ros2_ws/install/parameters/share/ament_index/resource_index/packages\n'}
+[3.738247] (parameters) StdoutLine: {'line': b'copying package.xml -> /home/lydia-chheng/ros2_ws/install/parameters/share/parameters\n'}
+[3.740454] (parameters) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.793014] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.805497] (parameters) StdoutLine: {'line': b'Copying ../../build/parameters/parameters.egg-info to /home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages/parameters-0.0.0-py3.10.egg-info\n'}
+[3.807694] (parameters) StdoutLine: {'line': b'running install_scripts\n'}
+[3.827469] (action_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.827785] (-) TimerEvent: {}
+[3.880818] (action_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.883543] (action_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.927912] (-) TimerEvent: {}
+[3.944771] (action_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.945216] (action_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.945454] (action_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.945739] (action_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.001331] (action_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.028027] (-) TimerEvent: {}
+[4.109313] (action_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.129482] (-) TimerEvent: {}
+[4.147530] (action_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.150415] (action_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.159636] (action_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.170492] (meow) StdoutLine: {'line': b"writing list of installed files to '/home/lydia-chheng/ros2_ws/build/meow/install.log'\n"}
+[4.217786] (parameters) StdoutLine: {'line': b'Installing parameters script to /home/lydia-chheng/ros2_ws/install/parameters/lib/parameters\n'}
+[4.220571] (parameters) StdoutLine: {'line': b"writing list of installed files to '/home/lydia-chheng/ros2_ws/build/parameters/install.log'\n"}
+[4.229622] (-) TimerEvent: {}
+[4.240712] (meow) CommandEnded: {'returncode': 0}
+[4.253601] (action_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[4.268678] (meow) JobEnded: {'identifier': 'meow', 'rc': 0}
+[4.271861] (test1) JobStarted: {'identifier': 'test1'}
+[4.290673] (action_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/lydia-chheng/ros2_ws/build/action_interface\n'}
+[4.329734] (-) TimerEvent: {}
+[4.430163] (-) TimerEvent: {}
+[4.530617] (-) TimerEvent: {}
+[4.631104] (-) TimerEvent: {}
+[4.662132] (parameters) CommandEnded: {'returncode': 0}
+[4.681196] (parameters) JobEnded: {'identifier': 'parameters', 'rc': 0}
+[4.684771] (test2) JobStarted: {'identifier': 'test2'}
+[4.699078] (action_interface) CommandEnded: {'returncode': 0}
+[4.699941] (action_interface) JobProgress: {'identifier': 'action_interface', 'progress': 'build'}
+[4.700012] (action_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lydia-chheng/ros2_ws/build/action_interface', '--', '-j4', '-l4'], 'cwd': '/home/lydia-chheng/ros2_ws/build/action_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lydia-chheng'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lydia-chheng'), ('OLDPWD', '/home/lydia-chheng'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '1541'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lydia-chheng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lydia-chheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lydia-chheng/ros2_ws/build/action_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.736487] (-) TimerEvent: {}
+[4.765687] (test_custom_msg_srv) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.802246] (action_interface) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.836604] (-) TimerEvent: {}
+[4.847577] (action_interface) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.909576] (action_interface) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_action_interface\n'}
+[4.938511] (-) TimerEvent: {}
+[5.038953] (-) TimerEvent: {}
+[5.139402] (-) TimerEvent: {}
+[5.239860] (-) TimerEvent: {}
+[5.341609] (-) TimerEvent: {}
+[5.442210] (-) TimerEvent: {}
+[5.463545] (test_custom_msg_srv) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.517471] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[5.541472] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.542296] (-) TimerEvent: {}
+[5.643593] (-) TimerEvent: {}
+[5.673736] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.674099] (test_custom_msg_srv) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.674319] (test_custom_msg_srv) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.674544] (test_custom_msg_srv) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.749021] (-) TimerEvent: {}
+[5.772458] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.849136] (-) TimerEvent: {}
+[5.873119] (action_interface) StdoutLine: {'line': b'running egg_info\n'}
+[5.949254] (-) TimerEvent: {}
+[5.978691] (action_interface) StdoutLine: {'line': b'creating action_interface.egg-info\n'}
+[5.979586] (action_interface) StdoutLine: {'line': b'writing action_interface.egg-info/PKG-INFO\n'}
+[5.980122] (action_interface) StdoutLine: {'line': b'writing dependency_links to action_interface.egg-info/dependency_links.txt\n'}
+[5.980913] (action_interface) StdoutLine: {'line': b'writing top-level names to action_interface.egg-info/top_level.txt\n'}
+[5.984464] (action_interface) StdoutLine: {'line': b"writing manifest file 'action_interface.egg-info/SOURCES.txt'\n"}
+[6.046805] (test_custom_msg_srv) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.049357] (-) TimerEvent: {}
+[6.132526] (test_custom_msg_srv) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.142083] (test_custom_msg_srv) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.145544] (action_interface) StdoutLine: {'line': b"reading manifest file 'action_interface.egg-info/SOURCES.txt'\n"}
+[6.147648] (action_interface) StdoutLine: {'line': b"writing manifest file 'action_interface.egg-info/SOURCES.txt'\n"}
+[6.149477] (-) TimerEvent: {}
+[6.154766] (test_custom_msg_srv) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.249591] (-) TimerEvent: {}
+[6.258414] (action_interface) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_action_interface_egg\n'}
+[6.285468] (test_custom_msg_srv) StdoutLine: {'line': b'-- Generating done\n'}
+[6.316675] (test_custom_msg_srv) StdoutLine: {'line': b'-- Build files have been written to: /home/lydia-chheng/ros2_ws/build/test_custom_msg_srv\n'}
+[6.343625] (test_custom_msg_srv) CommandEnded: {'returncode': 0}
+[6.344985] (test_custom_msg_srv) JobProgress: {'identifier': 'test_custom_msg_srv', 'progress': 'build'}
+[6.348735] (test_custom_msg_srv) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv', '--', '-j4', '-l4'], 'cwd': '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lydia-chheng'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lydia-chheng'), ('OLDPWD', '/home/lydia-chheng'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '1541'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lydia-chheng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lydia-chheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.349744] (-) TimerEvent: {}
+[6.453688] (-) TimerEvent: {}
+[6.469240] (test_custom_msg_srv) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.500343] (test_custom_msg_srv) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.515482] (test_custom_msg_srv) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_test_custom_msg_srv\n'}
+[6.553809] (-) TimerEvent: {}
+[6.654356] (-) TimerEvent: {}
+[6.754938] (-) TimerEvent: {}
+[6.858747] (-) TimerEvent: {}
+[6.864481] (action_interface) StdoutLine: {'line': b'[  6%] Built target action_interface__cpp\n'}
+[6.916763] (action_interface) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.934555] (action_interface) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.949939] (action_interface) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.961474] (-) TimerEvent: {}
+[7.064480] (-) TimerEvent: {}
+[7.164931] (-) TimerEvent: {}
+[7.189392] (action_interface) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/action_interface__rosidl_generator_c.dir/rosidl_generator_c/action_interface/action/detail/fibonacci__functions.c.o\x1b[0m\n'}
+[7.265048] (-) TimerEvent: {}
+[7.367477] (-) TimerEvent: {}
+[7.463121] (test1) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/test1', 'build', '--build-base', '/home/lydia-chheng/ros2_ws/build/test1/build', 'install', '--record', '/home/lydia-chheng/ros2_ws/build/test1/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lydia-chheng/ros2_ws/src/test1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lydia-chheng', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lydia-chheng', 'OLDPWD': '/home/lydia-chheng', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_US.UTF-8', 'SYSTEMD_EXEC_PID': '1541', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lydia-chheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lydia-chheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lydia-chheng/ros2_ws/build/test1', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lydia-chheng/ros2_ws/build/test1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[7.467580] (-) TimerEvent: {}
+[7.568045] (-) TimerEvent: {}
+[7.671475] (-) TimerEvent: {}
+[7.773496] (-) TimerEvent: {}
+[7.874120] (-) TimerEvent: {}
+[7.917547] (test_custom_msg_srv) StdoutLine: {'line': b'running egg_info\n'}
+[7.974234] (-) TimerEvent: {}
+[8.011547] (action_interface) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libaction_interface__rosidl_generator_c.so\x1b[0m\n'}
+[8.029155] (test_custom_msg_srv) StdoutLine: {'line': b'creating test_custom_msg_srv.egg-info\n'}
+[8.029970] (test_custom_msg_srv) StdoutLine: {'line': b'writing test_custom_msg_srv.egg-info/PKG-INFO\n'}
+[8.031190] (test_custom_msg_srv) StdoutLine: {'line': b'writing dependency_links to test_custom_msg_srv.egg-info/dependency_links.txt\n'}
+[8.032303] (test_custom_msg_srv) StdoutLine: {'line': b'writing top-level names to test_custom_msg_srv.egg-info/top_level.txt\n'}
+[8.032969] (test_custom_msg_srv) StdoutLine: {'line': b"writing manifest file 'test_custom_msg_srv.egg-info/SOURCES.txt'\n"}
+[8.075475] (-) TimerEvent: {}
+[8.175984] (-) TimerEvent: {}
+[8.254081] (test_custom_msg_srv) StdoutLine: {'line': b"reading manifest file 'test_custom_msg_srv.egg-info/SOURCES.txt'\n"}
+[8.254524] (action_interface) StdoutLine: {'line': b'[ 22%] Built target action_interface__rosidl_generator_c\n'}
+[8.258925] (test_custom_msg_srv) StdoutLine: {'line': b"writing manifest file 'test_custom_msg_srv.egg-info/SOURCES.txt'\n"}
+[8.276105] (-) TimerEvent: {}
+[8.313391] (action_interface) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.362841] (test_custom_msg_srv) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_test_custom_msg_srv_egg\n'}
+[8.376571] (-) TimerEvent: {}
+[8.477036] (-) TimerEvent: {}
+[8.533544] (test_custom_msg_srv) StdoutLine: {'line': b'[  4%] Built target test_custom_msg_srv__cpp\n'}
+[8.577200] (-) TimerEvent: {}
+[8.577755] (test_custom_msg_srv) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.579731] (test_custom_msg_srv) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.618592] (test_custom_msg_srv) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.629734] (test2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/test2', 'build', '--build-base', '/home/lydia-chheng/ros2_ws/build/test2/build', 'install', '--record', '/home/lydia-chheng/ros2_ws/build/test2/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lydia-chheng/ros2_ws/src/test2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lydia-chheng', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lydia-chheng', 'OLDPWD': '/home/lydia-chheng', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_US.UTF-8', 'SYSTEMD_EXEC_PID': '1541', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lydia-chheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lydia-chheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lydia-chheng/ros2_ws/build/test2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lydia-chheng/ros2_ws/build/test2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[8.681476] (-) TimerEvent: {}
+[8.735571] (test1) StderrLine: {'line': b"/home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[8.735930] (test1) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[8.781587] (-) TimerEvent: {}
+[8.884485] (-) TimerEvent: {}
+[8.984949] (-) TimerEvent: {}
+[9.085426] (-) TimerEvent: {}
+[9.185896] (-) TimerEvent: {}
+[9.286473] (-) TimerEvent: {}
+[9.385372] (action_interface) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/action_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_interface/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[9.386568] (-) TimerEvent: {}
+[9.487011] (-) TimerEvent: {}
+[9.588483] (-) TimerEvent: {}
+[9.608476] (action_interface) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/action_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/action_interface/action/detail/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[9.690477] (-) TimerEvent: {}
+[9.714588] (test2) StderrLine: {'line': b"/home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[9.715003] (test2) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[9.775471] (test1) StdoutLine: {'line': b'running egg_info\n'}
+[9.790592] (-) TimerEvent: {}
+[9.891203] (-) TimerEvent: {}
+[9.967616] (test1) StdoutLine: {'line': b'creating ../../build/test1/test1.egg-info\n'}
+[9.967934] (test1) StdoutLine: {'line': b'writing ../../build/test1/test1.egg-info/PKG-INFO\n'}
+[9.968130] (test1) StdoutLine: {'line': b'writing dependency_links to ../../build/test1/test1.egg-info/dependency_links.txt\n'}
+[9.968346] (test1) StdoutLine: {'line': b'writing entry points to ../../build/test1/test1.egg-info/entry_points.txt\n'}
+[9.968549] (test1) StdoutLine: {'line': b'writing requirements to ../../build/test1/test1.egg-info/requires.txt\n'}
+[9.968743] (test1) StdoutLine: {'line': b'writing top-level names to ../../build/test1/test1.egg-info/top_level.txt\n'}
+[9.968935] (test1) StdoutLine: {'line': b"writing manifest file '../../build/test1/test1.egg-info/SOURCES.txt'\n"}
+[9.991309] (-) TimerEvent: {}
+[10.093524] (-) TimerEvent: {}
+[10.194124] (-) TimerEvent: {}
+[10.242620] (test_custom_msg_srv) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_generator_c.dir/rosidl_generator_c/test_custom_msg_srv/msg/detail/num__functions.c.o\x1b[0m\n'}
+[10.296185] (-) TimerEvent: {}
+[10.308472] (test1) StdoutLine: {'line': b"reading manifest file '../../build/test1/test1.egg-info/SOURCES.txt'\n"}
+[10.308790] (test1) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[10.316138] (test1) StdoutLine: {'line': b"writing manifest file '../../build/test1/test1.egg-info/SOURCES.txt'\n"}
+[10.320461] (test1) StdoutLine: {'line': b'running build\n'}
+[10.320747] (test1) StdoutLine: {'line': b'running build_py\n'}
+[10.320923] (test1) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1\n'}
+[10.321094] (test1) StdoutLine: {'line': b'copying test1/__init__.py -> /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1\n'}
+[10.324086] (test1) StdoutLine: {'line': b'copying test1/test_node.py -> /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1\n'}
+[10.324952] (test1) StdoutLine: {'line': b'running install\n'}
+[10.378498] (test1) StdoutLine: {'line': b'running install_lib\n'}
+[10.400504] (-) TimerEvent: {}
+[10.501056] (-) TimerEvent: {}
+[10.512530] (test_custom_msg_srv) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_generator_c.dir/rosidl_generator_c/test_custom_msg_srv/msg/detail/sphere__functions.c.o\x1b[0m\n'}
+[10.543342] (test1) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1\n'}
+[10.544439] (test1) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1/__init__.py -> /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1\n'}
+[10.544665] (test1) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1/test_node.py -> /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1\n'}
+[10.550966] (test1) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1/__init__.py to __init__.cpython-310.pyc\n'}
+[10.551488] (test1) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1/test_node.py to test_node.cpython-310.pyc\n'}
+[10.552290] (test1) StdoutLine: {'line': b'running install_data\n'}
+[10.561278] (test1) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/test1/share/ament_index/resource_index/packages\n'}
+[10.561602] (test1) StdoutLine: {'line': b'copying resource/test1 -> /home/lydia-chheng/ros2_ws/install/test1/share/ament_index/resource_index/packages\n'}
+[10.561815] (test1) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/test1/share/test1\n'}
+[10.562016] (test1) StdoutLine: {'line': b'copying package.xml -> /home/lydia-chheng/ros2_ws/install/test1/share/test1\n'}
+[10.562212] (test1) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.602499] (-) TimerEvent: {}
+[10.632893] (action_interface) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/action_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_interface/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[10.705486] (-) TimerEvent: {}
+[10.735567] (test1) StdoutLine: {'line': b'Copying ../../build/test1/test1.egg-info to /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1-0.0.0-py3.10.egg-info\n'}
+[10.736181] (test1) StdoutLine: {'line': b'running install_scripts\n'}
+[10.736518] (test_custom_msg_srv) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/test_custom_msg_srv/msg/num__type_support.cpp.o\x1b[0m\n'}
+[10.779165] (test2) StdoutLine: {'line': b'running egg_info\n'}
+[10.807481] (-) TimerEvent: {}
+[10.825088] (test_custom_msg_srv) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_generator_c.dir/rosidl_generator_c/test_custom_msg_srv/srv/detail/add_three_ints__functions.c.o\x1b[0m\n'}
+[10.869746] (test_custom_msg_srv) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/test_custom_msg_srv/msg/detail/dds_fastrtps/num__type_support.cpp.o\x1b[0m\n'}
+[10.894153] (test2) StdoutLine: {'line': b'creating ../../build/test2/test2.egg-info\n'}
+[10.899097] (test2) StdoutLine: {'line': b'writing ../../build/test2/test2.egg-info/PKG-INFO\n'}
+[10.899494] (test2) StdoutLine: {'line': b'writing dependency_links to ../../build/test2/test2.egg-info/dependency_links.txt\n'}
+[10.907558] (test2) StdoutLine: {'line': b'writing entry points to ../../build/test2/test2.egg-info/entry_points.txt\n'}
+[10.907877] (-) TimerEvent: {}
+[10.908309] (test2) StdoutLine: {'line': b'writing requirements to ../../build/test2/test2.egg-info/requires.txt\n'}
+[10.908541] (test2) StdoutLine: {'line': b'writing top-level names to ../../build/test2/test2.egg-info/top_level.txt\n'}
+[10.908739] (test2) StdoutLine: {'line': b"writing manifest file '../../build/test2/test2.egg-info/SOURCES.txt'\n"}
+[11.008015] (-) TimerEvent: {}
+[11.032957] (test_custom_msg_srv) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/test_custom_msg_srv/msg/detail/num__type_support.cpp.o\x1b[0m\n'}
+[11.112480] (-) TimerEvent: {}
+[11.158561] (test2) StdoutLine: {'line': b"reading manifest file '../../build/test2/test2.egg-info/SOURCES.txt'\n"}
+[11.158896] (test2) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[11.159484] (test_custom_msg_srv) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libtest_custom_msg_srv__rosidl_generator_c.so\x1b[0m\n'}
+[11.163947] (test2) StdoutLine: {'line': b"writing manifest file '../../build/test2/test2.egg-info/SOURCES.txt'\n"}
+[11.164765] (test2) StdoutLine: {'line': b'running build\n'}
+[11.165491] (test2) StdoutLine: {'line': b'running build_py\n'}
+[11.166107] (test2) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/build/test2/build/lib/test2\n'}
+[11.167521] (test2) StdoutLine: {'line': b'copying test2/__init__.py -> /home/lydia-chheng/ros2_ws/build/test2/build/lib/test2\n'}
+[11.170377] (test2) StdoutLine: {'line': b'copying test2/my_test.py -> /home/lydia-chheng/ros2_ws/build/test2/build/lib/test2\n'}
+[11.170951] (test2) StdoutLine: {'line': b'copying test2/turtle_publisher.py -> /home/lydia-chheng/ros2_ws/build/test2/build/lib/test2\n'}
+[11.182559] (test2) StdoutLine: {'line': b'running install\n'}
+[11.212603] (-) TimerEvent: {}
+[11.219567] (test2) StdoutLine: {'line': b'running install_lib\n'}
+[11.315486] (-) TimerEvent: {}
+[11.367681] (test2) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages/test2\n'}
+[11.368505] (test2) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/test2/build/lib/test2/__init__.py -> /home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages/test2\n'}
+[11.369437] (test2) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/test2/build/lib/test2/my_test.py -> /home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages/test2\n'}
+[11.371464] (test2) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/test2/build/lib/test2/turtle_publisher.py -> /home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages/test2\n'}
+[11.372950] (test2) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages/test2/__init__.py to __init__.cpython-310.pyc\n'}
+[11.374234] (test2) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages/test2/my_test.py to my_test.cpython-310.pyc\n'}
+[11.375694] (test2) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages/test2/turtle_publisher.py to turtle_publisher.cpython-310.pyc\n'}
+[11.377762] (test2) StdoutLine: {'line': b'running install_data\n'}
+[11.378232] (test2) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/test2/share/ament_index/resource_index/packages\n'}
+[11.379868] (test2) StdoutLine: {'line': b'copying resource/test2 -> /home/lydia-chheng/ros2_ws/install/test2/share/ament_index/resource_index/packages\n'}
+[11.380328] (test2) StdoutLine: {'line': b'copying package.xml -> /home/lydia-chheng/ros2_ws/install/test2/share/test2\n'}
+[11.383476] (test2) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.415612] (-) TimerEvent: {}
+[11.467587] (test_custom_msg_srv) StdoutLine: {'line': b'[ 25%] Built target test_custom_msg_srv__rosidl_generator_c\n'}
+[11.477286] (test2) StdoutLine: {'line': b'Copying ../../build/test2/test2.egg-info to /home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages/test2-0.0.0-py3.10.egg-info\n'}
+[11.480465] (test2) StdoutLine: {'line': b'running install_scripts\n'}
+[11.518485] (-) TimerEvent: {}
+[11.523958] (test_custom_msg_srv) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/test_custom_msg_srv/msg/sphere__type_support.cpp.o\x1b[0m\n'}
+[11.614485] (action_interface) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/action_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/action_interface/action/detail/fibonacci__type_support_c.cpp.o\x1b[0m\n'}
+[11.618612] (-) TimerEvent: {}
+[11.721483] (-) TimerEvent: {}
+[11.824500] (-) TimerEvent: {}
+[11.925475] (-) TimerEvent: {}
+[12.025935] (-) TimerEvent: {}
+[12.073786] (test1) StdoutLine: {'line': b'Installing test_node script to /home/lydia-chheng/ros2_ws/install/test1/lib/test1\n'}
+[12.077570] (test1) StdoutLine: {'line': b"writing list of installed files to '/home/lydia-chheng/ros2_ws/build/test1/install.log'\n"}
+[12.126924] (-) TimerEvent: {}
+[12.227588] (-) TimerEvent: {}
+[12.276595] (action_interface) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.312522] (test1) CommandEnded: {'returncode': 0}
+[12.332503] (-) TimerEvent: {}
+[12.338585] (test1) JobEnded: {'identifier': 'test1', 'rc': 0}
+[12.340483] (test_srv_cli) JobStarted: {'identifier': 'test_srv_cli'}
+[12.432628] (-) TimerEvent: {}
+[12.534617] (-) TimerEvent: {}
+[12.594484] (action_interface) StdoutLine: {'line': b'[ 41%] Built target action_interface__rosidl_typesupport_cpp\n'}
+[12.599509] (test2) StdoutLine: {'line': b'Installing turtle_publisher script to /home/lydia-chheng/ros2_ws/install/test2/lib/test2\n'}
+[12.599860] (test2) StdoutLine: {'line': b"writing list of installed files to '/home/lydia-chheng/ros2_ws/build/test2/install.log'\n"}
+[12.636524] (-) TimerEvent: {}
+[12.669146] (action_interface) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[12.736633] (-) TimerEvent: {}
+[12.837199] (-) TimerEvent: {}
+[12.936152] (test_custom_msg_srv) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[12.940492] (-) TimerEvent: {}
+[13.041068] (-) TimerEvent: {}
+[13.143505] (-) TimerEvent: {}
+[13.243990] (-) TimerEvent: {}
+[13.344489] (-) TimerEvent: {}
+[13.447500] (-) TimerEvent: {}
+[13.543486] (test2) CommandEnded: {'returncode': 0}
+[13.550484] (-) TimerEvent: {}
+[13.597479] (test2) JobEnded: {'identifier': 'test2', 'rc': 0}
+[13.650609] (-) TimerEvent: {}
+[13.715163] (test_custom_msg_srv) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/test_custom_msg_srv/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[13.751856] (-) TimerEvent: {}
+[13.852298] (-) TimerEvent: {}
+[13.863181] (test_custom_msg_srv) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/test_custom_msg_srv/msg/detail/sphere__type_support.cpp.o\x1b[0m\n'}
+[13.955577] (-) TimerEvent: {}
+[14.009692] (action_interface) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.047378] (action_interface) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[14.057523] (-) TimerEvent: {}
+[14.102699] (test_custom_msg_srv) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/test_custom_msg_srv/msg/detail/dds_fastrtps/sphere__type_support.cpp.o\x1b[0m\n'}
+[14.158426] (-) TimerEvent: {}
+[14.264489] (-) TimerEvent: {}
+[14.366649] (-) TimerEvent: {}
+[14.389978] (action_interface) StdoutLine: {'line': b'[ 51%] Built target action_interface__rosidl_typesupport_fastrtps_c\n'}
+[14.430038] (action_interface) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.447116] (action_interface) StdoutLine: {'line': b'[ 54%] Built target action_interface__rosidl_typesupport_introspection_cpp\n'}
+[14.466763] (-) TimerEvent: {}
+[14.567224] (-) TimerEvent: {}
+[14.667702] (-) TimerEvent: {}
+[14.768148] (-) TimerEvent: {}
+[14.871669] (-) TimerEvent: {}
+[14.974485] (-) TimerEvent: {}
+[15.074969] (-) TimerEvent: {}
+[15.133649] (action_interface) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/action_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/action_interface/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[15.175095] (-) TimerEvent: {}
+[15.277285] (-) TimerEvent: {}
+[15.348580] (action_interface) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libaction_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[15.377397] (-) TimerEvent: {}
+[15.477855] (-) TimerEvent: {}
+[15.516476] (action_interface) StdoutLine: {'line': b'[ 61%] Built target action_interface__rosidl_typesupport_introspection_c\n'}
+[15.557726] (test_custom_msg_srv) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/test_custom_msg_srv/srv/detail/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[15.567535] (action_interface) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[15.577984] (-) TimerEvent: {}
+[15.678704] (-) TimerEvent: {}
+[15.683545] (test_custom_msg_srv) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX shared library libtest_custom_msg_srv__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[15.733518] (test_custom_msg_srv) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/test_custom_msg_srv/msg/detail/num__type_support_c.cpp.o\x1b[0m\n'}
+[15.766513] (action_interface) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/action_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interface/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[15.778823] (-) TimerEvent: {}
+[15.855251] (test_custom_msg_srv) StdoutLine: {'line': b'[ 42%] Built target test_custom_msg_srv__rosidl_typesupport_cpp\n'}
+[15.860114] (action_interface) StdoutLine: {'line': b'[ 67%] Built target action_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[15.874727] (test_custom_msg_srv) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/test_custom_msg_srv/srv/detail/dds_fastrtps/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[15.878944] (-) TimerEvent: {}
+[15.933572] (action_interface) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[15.979096] (-) TimerEvent: {}
+[16.079633] (-) TimerEvent: {}
+[16.130588] (action_interface) StdoutLine: {'line': b'[ 70%] Built target action_interface__rosidl_typesupport_c\n'}
+[16.179751] (-) TimerEvent: {}
+[16.212232] (action_interface) StdoutLine: {'line': b'[ 70%] Built target action_interface\n'}
+[16.279875] (-) TimerEvent: {}
+[16.297480] (action_interface) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[16.380485] (test_custom_msg_srv) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/test_custom_msg_srv/msg/detail/sphere__type_support_c.cpp.o\x1b[0m\n'}
+[16.380829] (-) TimerEvent: {}
+[16.481210] (-) TimerEvent: {}
+[16.581666] (-) TimerEvent: {}
+[16.682133] (-) TimerEvent: {}
+[16.782619] (-) TimerEvent: {}
+[16.821874] (test_srv_cli) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/test_srv_cli', 'build', '--build-base', '/home/lydia-chheng/ros2_ws/build/test_srv_cli/build', 'install', '--record', '/home/lydia-chheng/ros2_ws/build/test_srv_cli/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lydia-chheng/ros2_ws/src/test_srv_cli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lydia-chheng', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lydia-chheng', 'OLDPWD': '/home/lydia-chheng', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'en_US.UTF-8', 'SYSTEMD_EXEC_PID': '1541', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lydia-chheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lydia-chheng', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.97', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lydia-chheng/ros2_ws/build/test_srv_cli', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lydia-chheng/ros2_ws/build/test_srv_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[16.886482] (-) TimerEvent: {}
+[16.987828] (-) TimerEvent: {}
+[17.088285] (-) TimerEvent: {}
+[17.188789] (-) TimerEvent: {}
+[17.267826] (test_custom_msg_srv) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/test_custom_msg_srv/srv/detail/add_three_ints__type_support_c.cpp.o\x1b[0m\n'}
+[17.288917] (-) TimerEvent: {}
+[17.389491] (-) TimerEvent: {}
+[17.490608] (-) TimerEvent: {}
+[17.583491] (test_custom_msg_srv) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libtest_custom_msg_srv__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[17.588468] (test_srv_cli) StderrLine: {'line': b"/home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[17.588971] (test_srv_cli) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[17.594488] (-) TimerEvent: {}
+[17.694997] (-) TimerEvent: {}
+[17.737513] (test_custom_msg_srv) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libtest_custom_msg_srv__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[17.795118] (-) TimerEvent: {}
+[17.895806] (-) TimerEvent: {}
+[18.000477] (-) TimerEvent: {}
+[18.015173] (test_custom_msg_srv) StdoutLine: {'line': b'[ 53%] Built target test_custom_msg_srv__rosidl_typesupport_introspection_cpp\n'}
+[18.050246] (test_custom_msg_srv) StdoutLine: {'line': b'[ 53%] Built target test_custom_msg_srv__rosidl_typesupport_fastrtps_cpp\n'}
+[18.065558] (test_custom_msg_srv) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[18.093533] (test_custom_msg_srv) StdoutLine: {'line': b'[ 57%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[18.097231] (test_srv_cli) StdoutLine: {'line': b'running egg_info\n'}
+[18.100590] (-) TimerEvent: {}
+[18.166468] (test_srv_cli) StdoutLine: {'line': b'creating ../../build/test_srv_cli/test_srv_cli.egg-info\n'}
+[18.166824] (test_srv_cli) StdoutLine: {'line': b'writing ../../build/test_srv_cli/test_srv_cli.egg-info/PKG-INFO\n'}
+[18.167081] (test_srv_cli) StdoutLine: {'line': b'writing dependency_links to ../../build/test_srv_cli/test_srv_cli.egg-info/dependency_links.txt\n'}
+[18.167307] (test_srv_cli) StdoutLine: {'line': b'writing entry points to ../../build/test_srv_cli/test_srv_cli.egg-info/entry_points.txt\n'}
+[18.167643] (test_srv_cli) StdoutLine: {'line': b'writing requirements to ../../build/test_srv_cli/test_srv_cli.egg-info/requires.txt\n'}
+[18.167855] (test_srv_cli) StdoutLine: {'line': b'writing top-level names to ../../build/test_srv_cli/test_srv_cli.egg-info/top_level.txt\n'}
+[18.168053] (test_srv_cli) StdoutLine: {'line': b"writing manifest file '../../build/test_srv_cli/test_srv_cli.egg-info/SOURCES.txt'\n"}
+[18.200707] (-) TimerEvent: {}
+[18.302937] (-) TimerEvent: {}
+[18.317400] (test_srv_cli) StdoutLine: {'line': b"reading manifest file '../../build/test_srv_cli/test_srv_cli.egg-info/SOURCES.txt'\n"}
+[18.317979] (test_srv_cli) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[18.320766] (test_srv_cli) StdoutLine: {'line': b"writing manifest file '../../build/test_srv_cli/test_srv_cli.egg-info/SOURCES.txt'\n"}
+[18.323458] (test_srv_cli) StdoutLine: {'line': b'running build\n'}
+[18.323749] (test_srv_cli) StdoutLine: {'line': b'running build_py\n'}
+[18.323944] (test_srv_cli) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli\n'}
+[18.324131] (test_srv_cli) StdoutLine: {'line': b'copying test_srv_cli/__init__.py -> /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli\n'}
+[18.324357] (test_srv_cli) StdoutLine: {'line': b'copying test_srv_cli/client.py -> /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli\n'}
+[18.324620] (test_srv_cli) StdoutLine: {'line': b'copying test_srv_cli/service.py -> /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli\n'}
+[18.324805] (test_srv_cli) StdoutLine: {'line': b'running install\n'}
+[18.351840] (test_srv_cli) StdoutLine: {'line': b'running install_lib\n'}
+[18.403059] (-) TimerEvent: {}
+[18.421467] (test_srv_cli) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli\n'}
+[18.421871] (test_srv_cli) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli/__init__.py -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli\n'}
+[18.422106] (test_srv_cli) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli/client.py -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli\n'}
+[18.422417] (test_srv_cli) StdoutLine: {'line': b'copying /home/lydia-chheng/ros2_ws/build/test_srv_cli/build/lib/test_srv_cli/service.py -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli\n'}
+[18.422634] (test_srv_cli) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli/__init__.py to __init__.cpython-310.pyc\n'}
+[18.422824] (test_srv_cli) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli/client.py to client.cpython-310.pyc\n'}
+[18.423375] (test_srv_cli) StdoutLine: {'line': b'byte-compiling /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli/service.py to service.cpython-310.pyc\n'}
+[18.424270] (test_srv_cli) StdoutLine: {'line': b'running install_data\n'}
+[18.426441] (test_srv_cli) StdoutLine: {'line': b'creating /home/lydia-chheng/ros2_ws/install/test_srv_cli/share/ament_index/resource_index/packages\n'}
+[18.426683] (test_srv_cli) StdoutLine: {'line': b'copying resource/test_srv_cli -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/share/ament_index/resource_index/packages\n'}
+[18.426879] (test_srv_cli) StdoutLine: {'line': b'copying package.xml -> /home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli\n'}
+[18.427083] (test_srv_cli) StdoutLine: {'line': b'running install_egg_info\n'}
+[18.484590] (test_srv_cli) StdoutLine: {'line': b'Copying ../../build/test_srv_cli/test_srv_cli.egg-info to /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages/test_srv_cli-0.0.0-py3.10.egg-info\n'}
+[18.486917] (test_srv_cli) StdoutLine: {'line': b'running install_scripts\n'}
+[18.504476] (-) TimerEvent: {}
+[18.604918] (-) TimerEvent: {}
+[18.646843] (test_custom_msg_srv) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libtest_custom_msg_srv__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[18.705038] (-) TimerEvent: {}
+[18.806481] (-) TimerEvent: {}
+[18.852741] (test_custom_msg_srv) StdoutLine: {'line': b'[ 59%] Built target test_custom_msg_srv__rosidl_typesupport_fastrtps_c\n'}
+[18.901514] (test_srv_cli) StdoutLine: {'line': b'Installing client script to /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/test_srv_cli\n'}
+[18.902441] (test_srv_cli) StdoutLine: {'line': b'Installing service script to /home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/test_srv_cli\n'}
+[18.905475] (test_srv_cli) StdoutLine: {'line': b"writing list of installed files to '/home/lydia-chheng/ros2_ws/build/test_srv_cli/install.log'\n"}
+[18.906590] (-) TimerEvent: {}
+[18.980553] (test_srv_cli) CommandEnded: {'returncode': 0}
+[18.991109] (test_srv_cli) JobEnded: {'identifier': 'test_srv_cli', 'rc': 0}
+[19.006669] (-) TimerEvent: {}
+[19.096347] (test_custom_msg_srv) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_custom_msg_srv/msg/num__type_support.cpp.o\x1b[0m\n'}
+[19.096675] (test_custom_msg_srv) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_custom_msg_srv/msg/sphere__type_support.cpp.o\x1b[0m\n'}
+[19.106565] (test_custom_msg_srv) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_c.dir/rosidl_typesupport_c/test_custom_msg_srv/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[19.106889] (-) TimerEvent: {}
+[19.184942] (test_custom_msg_srv) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libtest_custom_msg_srv__rosidl_typesupport_c.so\x1b[0m\n'}
+[19.207026] (-) TimerEvent: {}
+[19.251163] (test_custom_msg_srv) StdoutLine: {'line': b'[ 68%] Built target test_custom_msg_srv__rosidl_typesupport_c\n'}
+[19.307160] (-) TimerEvent: {}
+[19.321806] (action_interface) StdoutLine: {'line': b'[ 74%] Built target action_interface__py\n'}
+[19.336828] (test_custom_msg_srv) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_custom_msg_srv/srv/detail/add_three_ints__type_support.c.o\x1b[0m\n'}
+[19.337200] (test_custom_msg_srv) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_custom_msg_srv/msg/detail/sphere__type_support.c.o\x1b[0m\n'}
+[19.337530] (test_custom_msg_srv) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/test_custom_msg_srv/msg/detail/num__type_support.c.o\x1b[0m\n'}
+[19.367501] (action_interface) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/action_interface__rosidl_generator_py.dir/rosidl_generator_py/action_interface/action/_fibonacci_s.c.o\x1b[0m\n'}
+[19.407297] (-) TimerEvent: {}
+[19.409035] (test_custom_msg_srv) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library libtest_custom_msg_srv__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[19.454766] (test_custom_msg_srv) StdoutLine: {'line': b'[ 76%] Built target test_custom_msg_srv__rosidl_typesupport_introspection_c\n'}
+[19.481093] (test_custom_msg_srv) StdoutLine: {'line': b'[ 76%] Built target test_custom_msg_srv\n'}
+[19.507446] (-) TimerEvent: {}
+[19.508490] (test_custom_msg_srv) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[19.607548] (-) TimerEvent: {}
+[19.622371] (action_interface) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/action_interface/libaction_interface__rosidl_generator_py.so\x1b[0m\n'}
+[19.682440] (action_interface) StdoutLine: {'line': b'[ 80%] Built target action_interface__rosidl_generator_py\n'}
+[19.708092] (-) TimerEvent: {}
+[19.723480] (action_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/action_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/action_interface/_action_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[19.723848] (action_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/action_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/action_interface/_action_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[19.724065] (action_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/action_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/action_interface/_action_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[19.809508] (-) TimerEvent: {}
+[19.909965] (-) TimerEvent: {}
+[20.010454] (-) TimerEvent: {}
+[20.058576] (action_interface) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/action_interface/action_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.066836] (action_interface) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/action_interface/action_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.073577] (action_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/action_interface/action_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.113497] (-) TimerEvent: {}
+[20.160237] (action_interface) StdoutLine: {'line': b'[100%] Built target action_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[20.161109] (action_interface) StdoutLine: {'line': b'[100%] Built target action_interface__rosidl_typesupport_c__pyext\n'}
+[20.164225] (action_interface) StdoutLine: {'line': b'[100%] Built target action_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[20.180653] (action_interface) CommandEnded: {'returncode': 0}
+[20.181839] (action_interface) JobProgress: {'identifier': 'action_interface', 'progress': 'install'}
+[20.193633] (action_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lydia-chheng/ros2_ws/build/action_interface'], 'cwd': '/home/lydia-chheng/ros2_ws/build/action_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lydia-chheng'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lydia-chheng'), ('OLDPWD', '/home/lydia-chheng'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '1541'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lydia-chheng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lydia-chheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lydia-chheng/ros2_ws/build/action_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[20.205344] (action_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.205730] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/ament_index/resource_index/rosidl_interfaces/action_interface\n'}
+[20.205978] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface\n'}
+[20.206233] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action\n'}
+[20.206495] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail\n'}
+[20.206760] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__functions.c\n'}
+[20.207022] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__struct.h\n'}
+[20.207331] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__functions.h\n'}
+[20.207611] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__type_support.h\n'}
+[20.207886] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/fibonacci.h\n'}
+[20.208077] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg\n'}
+[20.208264] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[20.208527] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/environment/library_path.sh\n'}
+[20.208796] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/environment/library_path.dsv\n'}
+[20.208972] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_generator_c.so\n'}
+[20.209270] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_generator_c.so" to ""\n'}
+[20.209551] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface\n'}
+[20.209803] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action\n'}
+[20.210028] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail\n'}
+[20.210242] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[20.210418] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg\n'}
+[20.210611] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[20.210798] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[20.211089] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[20.211267] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface\n'}
+[20.211460] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action\n'}
+[20.211719] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail\n'}
+[20.211896] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__type_support.c\n'}
+[20.212117] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[20.212296] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg\n'}
+[20.212555] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[20.212738] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_introspection_c.so\n'}
+[20.212912] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[20.213095] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_c.so\n'}
+[20.213331] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_c.so" to ""\n'}
+[20.213613] (-) TimerEvent: {}
+[20.213891] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface\n'}
+[20.214071] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action\n'}
+[20.214256] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/fibonacci.hpp\n'}
+[20.214535] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail\n'}
+[20.214787] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__type_support.hpp\n'}
+[20.214972] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__traits.hpp\n'}
+[20.215153] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__struct.hpp\n'}
+[20.215328] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__builder.hpp\n'}
+[20.215629] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg\n'}
+[20.215801] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[20.215969] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface\n'}
+[20.216169] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action\n'}
+[20.216432] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail\n'}
+[20.216660] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.216875] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/dds_fastrtps\n'}
+[20.217100] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg\n'}
+[20.217273] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[20.217462] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[20.217682] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[20.217885] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface\n'}
+[20.218055] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action\n'}
+[20.218225] (action_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail\n'}
+[20.218418] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__type_support.cpp\n'}
+[20.218614] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/include/action_interface/action_interface/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.218791] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[20.218972] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[20.219144] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_cpp.so\n'}
+[20.219383] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[20.219724] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/environment/pythonpath.sh\n'}
+[20.219904] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/environment/pythonpath.dsv\n'}
+[20.220078] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface-0.0.0-py3.10.egg-info\n'}
+[20.220261] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[20.220450] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[20.220766] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[20.220938] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[20.221155] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface\n'}
+[20.221333] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/_action_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[20.221626] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/__init__.py\n'}
+[20.221806] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/_action_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[20.221988] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/libaction_interface__rosidl_generator_py.so\n'}
+[20.222166] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.222351] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action\n'}
+[20.222632] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action/__init__.py\n'}
+[20.222804] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action/_fibonacci.py\n'}
+[20.222971] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action/_fibonacci_s.c\n'}
+[20.223142] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.223310] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.223509] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/_action_interface_s.ep.rosidl_typesupport_c.c\n'}
+[20.286008] (action_interface) StdoutLine: {'line': b"Listing '/home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface'...\n"}
+[20.286323] (action_interface) StdoutLine: {'line': b"Compiling '/home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/__init__.py'...\n"}
+[20.286531] (action_interface) StdoutLine: {'line': b"Listing '/home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action'...\n"}
+[20.286714] (action_interface) StdoutLine: {'line': b"Compiling '/home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action/__init__.py'...\n"}
+[20.286891] (action_interface) StdoutLine: {'line': b"Compiling '/home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action/_fibonacci.py'...\n"}
+[20.293397] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.294039] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[20.294469] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.295113] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[20.295539] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.296161] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/local/lib/python3.10/dist-packages/action_interface/action_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[20.296421] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_generator_py.so\n'}
+[20.297013] (action_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/action_interface/lib/libaction_interface__rosidl_generator_py.so" to ""\n'}
+[20.297265] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/action/Fibonacci.idl\n'}
+[20.297543] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/action/Fibonacci.action\n'}
+[20.297903] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/ament_index/resource_index/package_run_dependencies/action_interface\n'}
+[20.298246] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/ament_index/resource_index/parent_prefix_path/action_interface\n'}
+[20.298534] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/environment/ament_prefix_path.sh\n'}
+[20.298824] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/environment/ament_prefix_path.dsv\n'}
+[20.299106] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/environment/path.sh\n'}
+[20.299392] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/environment/path.dsv\n'}
+[20.299716] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/local_setup.bash\n'}
+[20.300040] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/local_setup.sh\n'}
+[20.300290] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/local_setup.zsh\n'}
+[20.300609] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/local_setup.dsv\n'}
+[20.300886] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.dsv\n'}
+[20.301226] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/ament_index/resource_index/packages/action_interface\n'}
+[20.301595] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/export_action_interface__rosidl_generator_cExport.cmake\n'}
+[20.301888] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/export_action_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[20.302200] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/export_action_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[20.302508] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/export_action_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[20.302829] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[20.303119] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[20.303433] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interface__rosidl_typesupport_cExport.cmake\n'}
+[20.303738] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[20.304051] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/export_action_interface__rosidl_generator_cppExport.cmake\n'}
+[20.304360] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/export_action_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[20.304668] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/export_action_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[20.304982] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[20.305289] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[20.305632] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interface__rosidl_typesupport_cppExport.cmake\n'}
+[20.305923] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[20.306234] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/export_action_interface__rosidl_generator_pyExport.cmake\n'}
+[20.306536] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/export_action_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[20.306826] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[20.307118] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.307427] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.307721] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.308009] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[20.308291] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[20.308594] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[20.308881] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interfaceConfig.cmake\n'}
+[20.309133] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/cmake/action_interfaceConfig-version.cmake\n'}
+[20.309415] (action_interface) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.xml\n'}
+[20.312415] (action_interface) CommandEnded: {'returncode': 0}
+[20.314076] (-) TimerEvent: {}
+[20.337089] (action_interface) JobEnded: {'identifier': 'action_interface', 'rc': 0}
+[20.414205] (-) TimerEvent: {}
+[20.514548] (-) TimerEvent: {}
+[20.614920] (-) TimerEvent: {}
+[20.652161] (test_custom_msg_srv) StdoutLine: {'line': b'[ 78%] Built target test_custom_msg_srv__py\n'}
+[20.680825] (test_custom_msg_srv) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_generator_py.dir/rosidl_generator_py/test_custom_msg_srv/msg/_sphere_s.c.o\x1b[0m\n'}
+[20.684253] (test_custom_msg_srv) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_generator_py.dir/rosidl_generator_py/test_custom_msg_srv/srv/_add_three_ints_s.c.o\x1b[0m\n'}
+[20.684786] (test_custom_msg_srv) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_generator_py.dir/rosidl_generator_py/test_custom_msg_srv/msg/_num_s.c.o\x1b[0m\n'}
+[20.715054] (-) TimerEvent: {}
+[20.815512] (-) TimerEvent: {}
+[20.916121] (-) TimerEvent: {}
+[20.933738] (test_custom_msg_srv) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/test_custom_msg_srv/libtest_custom_msg_srv__rosidl_generator_py.so\x1b[0m\n'}
+[21.003087] (test_custom_msg_srv) StdoutLine: {'line': b'[ 87%] Built target test_custom_msg_srv__rosidl_generator_py\n'}
+[21.016249] (-) TimerEvent: {}
+[21.036480] (test_custom_msg_srv) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/test_custom_msg_srv/_test_custom_msg_srv_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[21.040271] (test_custom_msg_srv) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/test_custom_msg_srv/_test_custom_msg_srv_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[21.041002] (test_custom_msg_srv) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/test_custom_msg_srv__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/test_custom_msg_srv/_test_custom_msg_srv_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[21.116389] (-) TimerEvent: {}
+[21.216934] (-) TimerEvent: {}
+[21.261034] (test_custom_msg_srv) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.266845] (test_custom_msg_srv) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.311632] (test_custom_msg_srv) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.317072] (-) TimerEvent: {}
+[21.335281] (test_custom_msg_srv) StdoutLine: {'line': b'[100%] Built target test_custom_msg_srv__rosidl_typesupport_c__pyext\n'}
+[21.348739] (test_custom_msg_srv) StdoutLine: {'line': b'[100%] Built target test_custom_msg_srv__rosidl_typesupport_fastrtps_c__pyext\n'}
+[21.379215] (test_custom_msg_srv) StdoutLine: {'line': b'[100%] Built target test_custom_msg_srv__rosidl_typesupport_introspection_c__pyext\n'}
+[21.396273] (test_custom_msg_srv) CommandEnded: {'returncode': 0}
+[21.397775] (test_custom_msg_srv) JobProgress: {'identifier': 'test_custom_msg_srv', 'progress': 'install'}
+[21.398402] (test_custom_msg_srv) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv'], 'cwd': '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lydia-chheng'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lydia-chheng'), ('OLDPWD', '/home/lydia-chheng'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '1541'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lydia-chheng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lydia-chheng'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/lydia-chheng/.local/bin:/opt/ros/humble/bin:/home/lydia-chheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lydiachheng-Latitude-E6430:@/tmp/.ICE-unix/1514,unix/lydiachheng-Latitude-E6430:/tmp/.ICE-unix/1514'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d21b629b_98b7_4f80_889c_324beebbd4ff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LXHJZ2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[21.412969] (test_custom_msg_srv) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.413455] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/ament_index/resource_index/rosidl_interfaces/test_custom_msg_srv\n'}
+[21.413860] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv\n'}
+[21.414161] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv\n'}
+[21.414464] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/add_three_ints.h\n'}
+[21.414819] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail\n'}
+[21.415058] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__struct.h\n'}
+[21.415393] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__functions.c\n'}
+[21.415710] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__functions.h\n'}
+[21.415947] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__type_support.h\n'}
+[21.416284] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg\n'}
+[21.416763] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/sphere.h\n'}
+[21.417030] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/num.h\n'}
+[21.417267] (-) TimerEvent: {}
+[21.417589] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail\n'}
+[21.417894] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__struct.h\n'}
+[21.418168] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__functions.h\n'}
+[21.418454] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__functions.h\n'}
+[21.418735] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__type_support.h\n'}
+[21.418985] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__struct.h\n'}
+[21.419229] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__type_support.h\n'}
+[21.419531] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__functions.c\n'}
+[21.419806] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__functions.c\n'}
+[21.420038] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/rosidl_generator_c__visibility_control.h\n'}
+[21.420311] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/environment/library_path.sh\n'}
+[21.420568] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/environment/library_path.dsv\n'}
+[21.420887] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_generator_c.so\n'}
+[21.421475] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_generator_c.so" to ""\n'}
+[21.421813] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv\n'}
+[21.422084] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv\n'}
+[21.422324] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail\n'}
+[21.422649] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[21.422933] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg\n'}
+[21.423202] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail\n'}
+[21.423442] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__rosidl_typesupport_fastrtps_c.h\n'}
+[21.423713] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[21.424000] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[21.424260] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_fastrtps_c.so\n'}
+[21.424554] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[21.424875] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv\n'}
+[21.425059] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv\n'}
+[21.425240] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail\n'}
+[21.425445] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__traits.hpp\n'}
+[21.425714] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__type_support.hpp\n'}
+[21.425887] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__builder.hpp\n'}
+[21.426056] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__struct.hpp\n'}
+[21.426297] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/add_three_ints.hpp\n'}
+[21.426518] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg\n'}
+[21.426723] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/num.hpp\n'}
+[21.426890] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[21.427056] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail\n'}
+[21.427222] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__struct.hpp\n'}
+[21.427386] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__traits.hpp\n'}
+[21.427646] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__struct.hpp\n'}
+[21.427818] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__builder.hpp\n'}
+[21.427962] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__traits.hpp\n'}
+[21.428134] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__type_support.hpp\n'}
+[21.428299] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__builder.hpp\n'}
+[21.428578] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__type_support.hpp\n'}
+[21.428806] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/sphere.hpp\n'}
+[21.428974] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv\n'}
+[21.429139] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv\n'}
+[21.429303] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail\n'}
+[21.429541] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/dds_fastrtps\n'}
+[21.429674] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.429793] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg\n'}
+[21.429945] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail\n'}
+[21.430111] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/dds_fastrtps\n'}
+[21.430276] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.430533] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.430748] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[21.430917] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_fastrtps_cpp.so\n'}
+[21.431082] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[21.431315] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv\n'}
+[21.431522] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv\n'}
+[21.431670] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail\n'}
+[21.431837] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__type_support.c\n'}
+[21.432002] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h\n'}
+[21.432165] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg\n'}
+[21.432328] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[21.432568] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail\n'}
+[21.432694] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__rosidl_typesupport_introspection_c.h\n'}
+[21.432812] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__type_support.c\n'}
+[21.432978] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[21.433141] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__type_support.c\n'}
+[21.433305] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_introspection_c.so\n'}
+[21.433590] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_introspection_c.so" to ""\n'}
+[21.433788] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_c.so\n'}
+[21.433952] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_c.so" to ""\n'}
+[21.434117] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv\n'}
+[21.434281] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv\n'}
+[21.434523] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail\n'}
+[21.434656] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__type_support.cpp\n'}
+[21.434774] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.434908] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg\n'}
+[21.435052] (test_custom_msg_srv) StdoutLine: {'line': b'-- Up-to-date: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail\n'}
+[21.435216] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.435381] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__type_support.cpp\n'}
+[21.435609] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.435807] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/include/test_custom_msg_srv/test_custom_msg_srv/msg/detail/sphere__type_support.cpp\n'}
+[21.435975] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_introspection_cpp.so\n'}
+[21.436140] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[21.436304] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_cpp.so\n'}
+[21.436547] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_typesupport_cpp.so" to ""\n'}
+[21.436702] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/environment/pythonpath.sh\n'}
+[21.436868] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/environment/pythonpath.dsv\n'}
+[21.437032] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv-0.0.0-py3.10.egg-info\n'}
+[21.437198] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[21.437428] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[21.437712] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[21.437860] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[21.438027] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv\n'}
+[21.438190] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/libtest_custom_msg_srv__rosidl_generator_py.so\n'}
+[21.438355] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/_test_custom_msg_srv_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[21.438603] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.438805] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/_test_custom_msg_srv_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[21.438964] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/__init__.py\n'}
+[21.439122] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.439282] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/srv\n'}
+[21.439530] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/srv/_add_three_ints_s.c\n'}
+[21.439726] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/srv/__init__.py\n'}
+[21.439885] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/srv/_add_three_ints.py\n'}
+[21.440044] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.440204] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg\n'}
+[21.440451] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg/_num_s.c\n'}
+[21.440588] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg/_sphere_s.c\n'}
+[21.440699] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg/_num.py\n'}
+[21.440808] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg/__init__.py\n'}
+[21.440917] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg/_sphere.py\n'}
+[21.441025] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/_test_custom_msg_srv_s.ep.rosidl_typesupport_c.c\n'}
+[21.500735] (test_custom_msg_srv) StdoutLine: {'line': b"Listing '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv'...\n"}
+[21.500990] (test_custom_msg_srv) StdoutLine: {'line': b"Compiling '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/__init__.py'...\n"}
+[21.501111] (test_custom_msg_srv) StdoutLine: {'line': b"Listing '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg'...\n"}
+[21.501247] (test_custom_msg_srv) StdoutLine: {'line': b"Compiling '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg/__init__.py'...\n"}
+[21.501358] (test_custom_msg_srv) StdoutLine: {'line': b"Compiling '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg/_num.py'...\n"}
+[21.501504] (test_custom_msg_srv) StdoutLine: {'line': b"Compiling '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/msg/_sphere.py'...\n"}
+[21.501616] (test_custom_msg_srv) StdoutLine: {'line': b"Listing '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/srv'...\n"}
+[21.501722] (test_custom_msg_srv) StdoutLine: {'line': b"Compiling '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/srv/__init__.py'...\n"}
+[21.501829] (test_custom_msg_srv) StdoutLine: {'line': b"Compiling '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/srv/_add_three_ints.py'...\n"}
+[21.507547] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.508239] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[21.508634] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.509235] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[21.509645] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.510296] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages/test_custom_msg_srv/test_custom_msg_srv_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[21.510633] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_generator_py.so\n'}
+[21.511322] (test_custom_msg_srv) StdoutLine: {'line': b'-- Set runtime path of "/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/libtest_custom_msg_srv__rosidl_generator_py.so" to ""\n'}
+[21.511690] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/msg/Num.idl\n'}
+[21.512260] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/msg/Sphere.idl\n'}
+[21.512534] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/srv/AddThreeInts.idl\n'}
+[21.512835] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/msg/Num.msg\n'}
+[21.513022] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/msg/Sphere.msg\n'}
+[21.513256] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/srv/AddThreeInts.srv\n'}
+[21.513523] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/srv/AddThreeInts_Request.msg\n'}
+[21.513784] (test_custom_msg_srv) StdoutLine: {'line': b'-- Installing: /home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/srv/AddThreeInts_Response.msg\n'}
+[21.514162] (test_custom_msg_srv) StderrLine: {'line': b'\x1b[31mCMake Error at cmake_install.cmake:391 (file):\n'}
+[21.514374] (test_custom_msg_srv) StderrLine: {'line': b'  file INSTALL cannot find\n'}
+[21.514566] (test_custom_msg_srv) StderrLine: {'line': b'  "/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv/scripts/publisher.py":\n'}
+[21.514740] (test_custom_msg_srv) StderrLine: {'line': b'  No such file or directory.\n'}
+[21.514907] (test_custom_msg_srv) StderrLine: {'line': b'\n'}
+[21.515073] (test_custom_msg_srv) StderrLine: {'line': b'\x1b[0m\n'}
+[21.517563] (test_custom_msg_srv) CommandEnded: {'returncode': 1}
+[21.518376] (-) TimerEvent: {}
+[21.533468] (test_custom_msg_srv) JobEnded: {'identifier': 'test_custom_msg_srv', 'rc': 1}
+[21.535095] (test_pub_sub) JobSkipped: {'identifier': 'test_pub_sub'}
+[21.535144] (-) EventReactorShutdown: {}

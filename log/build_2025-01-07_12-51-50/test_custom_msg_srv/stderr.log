@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:391 (file):
+  file INSTALL cannot find
+  "/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv/sripts/publisher.py":
+  No such file or directory.
+
+[0m

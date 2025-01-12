@@ -1,0 +1,3 @@
+[console_scripts]
+client = test_srv_cli.client:main
+service = test_srv_cli.service:main

@@ -1,0 +1,40 @@
+[1.482s] Invoking command in '/home/lydia-chheng/ros2_ws/src/test_pub_sub': AMENT_PREFIX_PATH=/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv LD_LIBRARY_PATH=/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test_pub_sub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages:/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test_pub_sub build --build-base /home/lydia-chheng/ros2_ws/build/test_pub_sub/build install --record /home/lydia-chheng/ros2_ws/build/test_pub_sub/install.log --single-version-externally-managed install_data
+[1.748s] /home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[1.748s]   warnings.warn(msg)
+[1.959s] running egg_info
+[1.996s] creating ../../build/test_pub_sub/test_pub_sub.egg-info
+[1.996s] writing ../../build/test_pub_sub/test_pub_sub.egg-info/PKG-INFO
+[1.997s] writing dependency_links to ../../build/test_pub_sub/test_pub_sub.egg-info/dependency_links.txt
+[1.997s] writing entry points to ../../build/test_pub_sub/test_pub_sub.egg-info/entry_points.txt
+[1.998s] writing requirements to ../../build/test_pub_sub/test_pub_sub.egg-info/requires.txt
+[1.998s] writing top-level names to ../../build/test_pub_sub/test_pub_sub.egg-info/top_level.txt
+[1.998s] writing manifest file '../../build/test_pub_sub/test_pub_sub.egg-info/SOURCES.txt'
+[2.063s] reading manifest file '../../build/test_pub_sub/test_pub_sub.egg-info/SOURCES.txt'
+[2.063s] adding license file 'LICENSE'
+[2.067s] writing manifest file '../../build/test_pub_sub/test_pub_sub.egg-info/SOURCES.txt'
+[2.067s] running build
+[2.067s] running build_py
+[2.068s] creating /home/lydia-chheng/ros2_ws/build/test_pub_sub/build/lib/test_pub_sub
+[2.068s] copying test_pub_sub/subscriber.py -> /home/lydia-chheng/ros2_ws/build/test_pub_sub/build/lib/test_pub_sub
+[2.071s] copying test_pub_sub/__init__.py -> /home/lydia-chheng/ros2_ws/build/test_pub_sub/build/lib/test_pub_sub
+[2.071s] copying test_pub_sub/publisher.py -> /home/lydia-chheng/ros2_ws/build/test_pub_sub/build/lib/test_pub_sub
+[2.071s] running install
+[2.082s] running install_lib
+[2.114s] creating /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub
+[2.114s] copying /home/lydia-chheng/ros2_ws/build/test_pub_sub/build/lib/test_pub_sub/subscriber.py -> /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub
+[2.114s] copying /home/lydia-chheng/ros2_ws/build/test_pub_sub/build/lib/test_pub_sub/__init__.py -> /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub
+[2.115s] copying /home/lydia-chheng/ros2_ws/build/test_pub_sub/build/lib/test_pub_sub/publisher.py -> /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub
+[2.115s] byte-compiling /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub/subscriber.py to subscriber.cpython-310.pyc
+[2.116s] byte-compiling /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub/__init__.py to __init__.cpython-310.pyc
+[2.117s] byte-compiling /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub/publisher.py to publisher.cpython-310.pyc
+[2.117s] running install_data
+[2.118s] creating /home/lydia-chheng/ros2_ws/install/test_pub_sub/share/ament_index/resource_index/packages
+[2.118s] copying resource/test_pub_sub -> /home/lydia-chheng/ros2_ws/install/test_pub_sub/share/ament_index/resource_index/packages
+[2.119s] copying package.xml -> /home/lydia-chheng/ros2_ws/install/test_pub_sub/share/test_pub_sub
+[2.119s] running install_egg_info
+[2.153s] Copying ../../build/test_pub_sub/test_pub_sub.egg-info to /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages/test_pub_sub-0.0.0-py3.10.egg-info
+[2.155s] running install_scripts
+[2.425s] Installing publisher_node script to /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/test_pub_sub
+[2.426s] Installing subscriber script to /home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/test_pub_sub
+[2.426s] writing list of installed files to '/home/lydia-chheng/ros2_ws/build/test_pub_sub/install.log'
+[2.475s] Invoked command in '/home/lydia-chheng/ros2_ws/src/test_pub_sub' returned '0': AMENT_PREFIX_PATH=/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv LD_LIBRARY_PATH=/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test_pub_sub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test_pub_sub/lib/python3.10/site-packages:/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test_pub_sub build --build-base /home/lydia-chheng/ros2_ws/build/test_pub_sub/build install --record /home/lydia-chheng/ros2_ws/build/test_pub_sub/install.log --single-version-externally-managed install_data

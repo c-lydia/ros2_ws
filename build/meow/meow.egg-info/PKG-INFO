@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: meow
+Version: 0.0.0
+Summary: TODO: Package description
+Maintainer: lydia-chheng
+Maintainer-email: lydia-chheng@todo.todo
+License: Apache-2.0
+License-File: LICENSE
+Requires-Dist: setuptools

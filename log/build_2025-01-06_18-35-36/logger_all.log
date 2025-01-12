@@ -1,0 +1,470 @@
+[0.174s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.174s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x78922f237190>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78922f236c50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78922f236c50>>, mixin_verb=('build',))
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.232s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.233s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lydia-chheng/ros2_ws'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interface) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interface) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interface) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interface) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interface) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interface) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interface) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/action_interface) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'src/action_interface' with type 'ros.ament_cmake' and name 'action_interface'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/meow) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/meow) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/meow) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/meow) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/meow) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/meow) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/meow) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/meow) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/meow) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/meow' with type 'ros.ament_python' and name 'meow'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/parameters) by extension 'ros'
+[0.267s] DEBUG:colcon.colcon_core.package_identification:Package 'src/parameters' with type 'ros.ament_python' and name 'parameters'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/test1': Error(s) in package 'src/test1/package.xml':
+The manifest contains invalid XML:
+not well-formed (invalid token): line 1, column 0
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extensions ['cmake', 'python']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extension 'cmake'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extension 'python'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/test1' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extensions ['python_setup_py']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/test1) by extension 'python_setup_py'
+[0.625s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test1' with type 'python' and name 'test1'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/test2) by extensions ['ignore', 'ignore_ament_install']
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/test2) by extension 'ignore'
+[0.625s] Level 1:colcon.colcon_core.package_identification:_identify(src/test2) by extension 'ignore_ament_install'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/test2) by extensions ['colcon_pkg']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/test2) by extension 'colcon_pkg'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/test2) by extensions ['colcon_meta']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/test2) by extension 'colcon_meta'
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/test2) by extensions ['ros']
+[0.626s] Level 1:colcon.colcon_core.package_identification:_identify(src/test2) by extension 'ros'
+[0.627s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test2' with type 'ros.ament_python' and name 'test2'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg_srv) by extensions ['ignore', 'ignore_ament_install']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg_srv) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg_srv) by extension 'ignore_ament_install'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg_srv) by extensions ['colcon_pkg']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg_srv) by extension 'colcon_pkg'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg_srv) by extensions ['colcon_meta']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg_srv) by extension 'colcon_meta'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg_srv) by extensions ['ros']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg_srv) by extension 'ros'
+[0.629s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_custom_msg_srv' with type 'ros.ament_cmake' and name 'test_custom_msg_srv'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pub_sub) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pub_sub) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pub_sub) by extension 'ignore_ament_install'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pub_sub) by extensions ['colcon_pkg']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pub_sub) by extension 'colcon_pkg'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pub_sub) by extensions ['colcon_meta']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pub_sub) by extension 'colcon_meta'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pub_sub) by extensions ['ros']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pub_sub) by extension 'ros'
+[0.632s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_pub_sub' with type 'ros.ament_python' and name 'test_pub_sub'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_srv_cli) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_srv_cli) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_srv_cli) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_srv_cli) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_srv_cli) by extension 'colcon_pkg'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_srv_cli) by extensions ['colcon_meta']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_srv_cli) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_srv_cli) by extensions ['ros']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_srv_cli) by extension 'ros'
+[0.634s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_srv_cli' with type 'ros.ament_python' and name 'test_srv_cli'
+[0.634s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.634s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.634s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.634s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.634s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.669s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.669s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.673s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 294 installed packages in /opt/ros/humble
+[0.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'action_interface' build argument 'cmake_args' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'action_interface' build argument 'cmake_target' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'action_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'action_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'action_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'action_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'action_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'action_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'action_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.754s] DEBUG:colcon.colcon_core.verb:Building package 'action_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lydia-chheng/ros2_ws/build/action_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lydia-chheng/ros2_ws/install/action_interface', 'merge_install': False, 'path': '/home/lydia-chheng/ros2_ws/src/action_interface', 'symlink_install': False, 'test_result_base': None}
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'meow' build argument 'cmake_args' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'meow' build argument 'cmake_target' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'meow' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'meow' build argument 'cmake_clean_cache' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'meow' build argument 'cmake_clean_first' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'meow' build argument 'cmake_force_configure' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'meow' build argument 'ament_cmake_args' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'meow' build argument 'catkin_cmake_args' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'meow' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.755s] DEBUG:colcon.colcon_core.verb:Building package 'meow' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lydia-chheng/ros2_ws/build/meow', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lydia-chheng/ros2_ws/install/meow', 'merge_install': False, 'path': '/home/lydia-chheng/ros2_ws/src/meow', 'symlink_install': False, 'test_result_base': None}
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'parameters' build argument 'cmake_args' from command line to 'None'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'parameters' build argument 'cmake_target' from command line to 'None'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'parameters' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'parameters' build argument 'cmake_clean_cache' from command line to 'False'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'parameters' build argument 'cmake_clean_first' from command line to 'False'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'parameters' build argument 'cmake_force_configure' from command line to 'False'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'parameters' build argument 'ament_cmake_args' from command line to 'None'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'parameters' build argument 'catkin_cmake_args' from command line to 'None'
+[0.756s] Level 5:colcon.colcon_core.verb:set package 'parameters' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.756s] DEBUG:colcon.colcon_core.verb:Building package 'parameters' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lydia-chheng/ros2_ws/build/parameters', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lydia-chheng/ros2_ws/install/parameters', 'merge_install': False, 'path': '/home/lydia-chheng/ros2_ws/src/parameters', 'symlink_install': False, 'test_result_base': None}
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'test1' build argument 'cmake_args' from command line to 'None'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'test1' build argument 'cmake_target' from command line to 'None'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'test1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'test1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'test1' build argument 'cmake_clean_first' from command line to 'False'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'test1' build argument 'cmake_force_configure' from command line to 'False'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'test1' build argument 'ament_cmake_args' from command line to 'None'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'test1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.757s] Level 5:colcon.colcon_core.verb:set package 'test1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.757s] DEBUG:colcon.colcon_core.verb:Building package 'test1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lydia-chheng/ros2_ws/build/test1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lydia-chheng/ros2_ws/install/test1', 'merge_install': False, 'path': '/home/lydia-chheng/ros2_ws/src/test1', 'symlink_install': False, 'test_result_base': None}
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'test2' build argument 'cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'test2' build argument 'cmake_target' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'test2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'test2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'test2' build argument 'cmake_clean_first' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'test2' build argument 'cmake_force_configure' from command line to 'False'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'test2' build argument 'ament_cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'test2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.758s] Level 5:colcon.colcon_core.verb:set package 'test2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.758s] DEBUG:colcon.colcon_core.verb:Building package 'test2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lydia-chheng/ros2_ws/build/test2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lydia-chheng/ros2_ws/install/test2', 'merge_install': False, 'path': '/home/lydia-chheng/ros2_ws/src/test2', 'symlink_install': False, 'test_result_base': None}
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg_srv' build argument 'cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg_srv' build argument 'cmake_target' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg_srv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg_srv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg_srv' build argument 'cmake_clean_first' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg_srv' build argument 'cmake_force_configure' from command line to 'False'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg_srv' build argument 'ament_cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg_srv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.759s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg_srv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.759s] DEBUG:colcon.colcon_core.verb:Building package 'test_custom_msg_srv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv', 'merge_install': False, 'path': '/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv', 'symlink_install': False, 'test_result_base': None}
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'test_srv_cli' build argument 'cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'test_srv_cli' build argument 'cmake_target' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'test_srv_cli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'test_srv_cli' build argument 'cmake_clean_cache' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'test_srv_cli' build argument 'cmake_clean_first' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'test_srv_cli' build argument 'cmake_force_configure' from command line to 'False'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'test_srv_cli' build argument 'ament_cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'test_srv_cli' build argument 'catkin_cmake_args' from command line to 'None'
+[0.760s] Level 5:colcon.colcon_core.verb:set package 'test_srv_cli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.760s] DEBUG:colcon.colcon_core.verb:Building package 'test_srv_cli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lydia-chheng/ros2_ws/build/test_srv_cli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lydia-chheng/ros2_ws/install/test_srv_cli', 'merge_install': False, 'path': '/home/lydia-chheng/ros2_ws/src/test_srv_cli', 'symlink_install': False, 'test_result_base': None}
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'test_pub_sub' build argument 'cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'test_pub_sub' build argument 'cmake_target' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'test_pub_sub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'test_pub_sub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'test_pub_sub' build argument 'cmake_clean_first' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'test_pub_sub' build argument 'cmake_force_configure' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'test_pub_sub' build argument 'ament_cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'test_pub_sub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'test_pub_sub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.761s] DEBUG:colcon.colcon_core.verb:Building package 'test_pub_sub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lydia-chheng/ros2_ws/build/test_pub_sub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lydia-chheng/ros2_ws/install/test_pub_sub', 'merge_install': False, 'path': '/home/lydia-chheng/ros2_ws/src/test_pub_sub', 'symlink_install': False, 'test_result_base': None}
+[0.762s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.763s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.764s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv' with build type 'ament_cmake'
+[0.764s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lydia-chheng/ros2_ws/src/test_custom_msg_srv'
+[0.769s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.770s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.770s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.775s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lydia-chheng/ros2_ws/src/action_interface' with build type 'ament_cmake'
+[0.776s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lydia-chheng/ros2_ws/src/action_interface'
+[0.777s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.777s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.782s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lydia-chheng/ros2_ws/src/meow' with build type 'ament_python'
+[0.782s] Level 1:colcon.colcon_core.shell:create_environment_hook('meow', 'ament_prefix_path')
+[0.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/meow/share/meow/hook/ament_prefix_path.ps1'
+[0.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/meow/share/meow/hook/ament_prefix_path.dsv'
+[0.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/meow/share/meow/hook/ament_prefix_path.sh'
+[0.786s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.786s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.790s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lydia-chheng/ros2_ws/src/parameters' with build type 'ament_python'
+[0.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('parameters', 'ament_prefix_path')
+[0.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/hook/ament_prefix_path.ps1'
+[0.792s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/hook/ament_prefix_path.dsv'
+[0.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/hook/ament_prefix_path.sh'
+[0.794s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.795s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lydia-chheng/ros2_ws/src/test_custom_msg_srv -DCMAKE_INSTALL_PREFIX=/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv
+[0.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/build/action_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lydia-chheng/ros2_ws/src/action_interface -DCMAKE_INSTALL_PREFIX=/home/lydia-chheng/ros2_ws/install/action_interface
+[1.339s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lydia-chheng/ros2_ws/src/meow'
+[1.340s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.340s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.792s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lydia-chheng/ros2_ws/src/parameters'
+[1.793s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.793s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/src/meow': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/meow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/meow build --build-base /home/lydia-chheng/ros2_ws/build/meow/build install --record /home/lydia-chheng/ros2_ws/build/meow/install.log --single-version-externally-managed install_data
+[3.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/src/parameters': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/parameters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parameters build --build-base /home/lydia-chheng/ros2_ws/build/parameters/build install --record /home/lydia-chheng/ros2_ws/build/parameters/install.log --single-version-externally-managed install_data
+[5.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/src/meow' returned '0': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/meow/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/meow build --build-base /home/lydia-chheng/ros2_ws/build/meow/build install --record /home/lydia-chheng/ros2_ws/build/meow/install.log --single-version-externally-managed install_data
+[5.012s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/meow' for CMake module files
+[5.013s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/meow' for CMake config files
+[5.015s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/meow/lib'
+[5.015s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/meow/bin'
+[5.015s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/meow/lib/pkgconfig/meow.pc'
+[5.016s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/meow/lib/python3.10/site-packages'
+[5.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('meow', 'pythonpath')
+[5.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/meow/share/meow/hook/pythonpath.ps1'
+[5.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/meow/share/meow/hook/pythonpath.dsv'
+[5.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/meow/share/meow/hook/pythonpath.sh'
+[5.021s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/meow/bin'
+[5.021s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(meow)
+[5.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/meow/share/meow/package.ps1'
+[5.024s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lydia-chheng/ros2_ws/install/meow/share/meow/package.dsv'
+[5.026s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/meow/share/meow/package.sh'
+[5.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/meow/share/meow/package.bash'
+[5.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/meow/share/meow/package.zsh'
+[5.032s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lydia-chheng/ros2_ws/install/meow/share/colcon-core/packages/meow)
+[5.035s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lydia-chheng/ros2_ws/src/test1'
+[5.036s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.036s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.426s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/parameters' for CMake module files
+[5.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/src/parameters' returned '0': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/parameters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/parameters build --build-base /home/lydia-chheng/ros2_ws/build/parameters/build install --record /home/lydia-chheng/ros2_ws/build/parameters/install.log --single-version-externally-managed install_data
+[5.432s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/parameters' for CMake config files
+[5.434s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/parameters/lib'
+[5.434s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/parameters/bin'
+[5.434s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/parameters/lib/pkgconfig/parameters.pc'
+[5.435s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/parameters/lib/python3.10/site-packages'
+[5.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('parameters', 'pythonpath')
+[5.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/hook/pythonpath.ps1'
+[5.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/hook/pythonpath.dsv'
+[5.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/hook/pythonpath.sh'
+[5.439s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/parameters/bin'
+[5.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(parameters)
+[5.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/package.ps1'
+[5.441s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/package.dsv'
+[5.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/package.sh'
+[5.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/package.bash'
+[5.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/parameters/share/parameters/package.zsh'
+[5.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lydia-chheng/ros2_ws/install/parameters/share/colcon-core/packages/parameters)
+[5.446s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lydia-chheng/ros2_ws/src/test2' with build type 'ament_python'
+[5.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('test2', 'ament_prefix_path')
+[5.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test2/share/test2/hook/ament_prefix_path.ps1'
+[5.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/test2/share/test2/hook/ament_prefix_path.dsv'
+[5.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test2/share/test2/hook/ament_prefix_path.sh'
+[5.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.451s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/build/action_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lydia-chheng/ros2_ws/src/action_interface -DCMAKE_INSTALL_PREFIX=/home/lydia-chheng/ros2_ws/install/action_interface
+[5.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/build/action_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lydia-chheng/ros2_ws/build/action_interface -- -j4 -l4
+[6.352s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lydia-chheng/ros2_ws/src/test2'
+[6.353s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.353s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lydia-chheng/ros2_ws/src/test_custom_msg_srv -DCMAKE_INSTALL_PREFIX=/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv
+[7.114s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lydia-chheng/ros2_ws/build/test_custom_msg_srv -- -j4 -l4
+[8.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/src/test1': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test1 build --build-base /home/lydia-chheng/ros2_ws/build/test1/build install --record /home/lydia-chheng/ros2_ws/build/test1/install.log --single-version-externally-managed install_data
+[9.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/src/test2': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test2 build --build-base /home/lydia-chheng/ros2_ws/build/test2/build install --record /home/lydia-chheng/ros2_ws/build/test2/install.log --single-version-externally-managed install_data
+[13.069s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test1' for CMake module files
+[13.070s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test1' for CMake config files
+[13.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/src/test1' returned '0': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test1 build --build-base /home/lydia-chheng/ros2_ws/build/test1/build install --record /home/lydia-chheng/ros2_ws/build/test1/install.log --single-version-externally-managed install_data
+[13.079s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test1/lib'
+[13.079s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test1/bin'
+[13.079s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test1/lib/pkgconfig/test1.pc'
+[13.080s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages'
+[13.080s] Level 1:colcon.colcon_core.shell:create_environment_hook('test1', 'pythonpath')
+[13.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test1/share/test1/hook/pythonpath.ps1'
+[13.082s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/test1/share/test1/hook/pythonpath.dsv'
+[13.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test1/share/test1/hook/pythonpath.sh'
+[13.087s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test1/bin'
+[13.087s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test1)
+[13.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test1/share/test1/package.ps1'
+[13.092s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lydia-chheng/ros2_ws/install/test1/share/test1/package.dsv'
+[13.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test1/share/test1/package.sh'
+[13.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test1/share/test1/package.bash'
+[13.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test1/share/test1/package.zsh'
+[13.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lydia-chheng/ros2_ws/install/test1/share/colcon-core/packages/test1)
+[13.105s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lydia-chheng/ros2_ws/src/test_srv_cli' with build type 'ament_python'
+[13.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_srv_cli', 'ament_prefix_path')
+[13.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/hook/ament_prefix_path.ps1'
+[13.129s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/hook/ament_prefix_path.dsv'
+[13.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/hook/ament_prefix_path.sh'
+[13.137s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.138s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.294s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lydia-chheng/ros2_ws/src/test_srv_cli'
+[14.295s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.295s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.306s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test2' for CMake module files
+[14.307s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test2' for CMake config files
+[14.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/src/test2' returned '0': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test2 build --build-base /home/lydia-chheng/ros2_ws/build/test2/build install --record /home/lydia-chheng/ros2_ws/build/test2/install.log --single-version-externally-managed install_data
+[14.316s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test2/lib'
+[14.316s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test2/bin'
+[14.317s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test2/lib/pkgconfig/test2.pc'
+[14.317s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test2/lib/python3.10/site-packages'
+[14.317s] Level 1:colcon.colcon_core.shell:create_environment_hook('test2', 'pythonpath')
+[14.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test2/share/test2/hook/pythonpath.ps1'
+[14.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/test2/share/test2/hook/pythonpath.dsv'
+[14.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test2/share/test2/hook/pythonpath.sh'
+[14.334s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test2/bin'
+[14.334s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test2)
+[14.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test2/share/test2/package.ps1'
+[14.342s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lydia-chheng/ros2_ws/install/test2/share/test2/package.dsv'
+[14.344s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test2/share/test2/package.sh'
+[14.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test2/share/test2/package.bash'
+[14.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test2/share/test2/package.zsh'
+[14.359s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lydia-chheng/ros2_ws/install/test2/share/colcon-core/packages/test2)
+[17.588s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/src/test_srv_cli': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test_srv_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test_srv_cli build --build-base /home/lydia-chheng/ros2_ws/build/test_srv_cli/build install --record /home/lydia-chheng/ros2_ws/build/test_srv_cli/install.log --single-version-externally-managed install_data
+[19.736s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_srv_cli' for CMake module files
+[19.742s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_srv_cli' for CMake config files
+[19.744s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_srv_cli/lib'
+[19.744s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_srv_cli/bin'
+[19.744s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/pkgconfig/test_srv_cli.pc'
+[19.745s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages'
+[19.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/src/test_srv_cli' returned '0': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test_srv_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test_srv_cli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test_srv_cli build --build-base /home/lydia-chheng/ros2_ws/build/test_srv_cli/build install --record /home/lydia-chheng/ros2_ws/build/test_srv_cli/install.log --single-version-externally-managed install_data
+[19.746s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_srv_cli', 'pythonpath')
+[19.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/hook/pythonpath.ps1'
+[19.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/hook/pythonpath.dsv'
+[19.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/hook/pythonpath.sh'
+[19.749s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_srv_cli/bin'
+[19.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_srv_cli)
+[19.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/package.ps1'
+[19.751s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/package.dsv'
+[19.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/package.sh'
+[19.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/package.bash'
+[19.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/test_srv_cli/package.zsh'
+[19.755s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lydia-chheng/ros2_ws/install/test_srv_cli/share/colcon-core/packages/test_srv_cli)
+[20.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/build/action_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lydia-chheng/ros2_ws/build/action_interface -- -j4 -l4
+[20.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/build/action_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lydia-chheng/ros2_ws/build/action_interface
+[21.077s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(action_interface)
+[21.077s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface' for CMake module files
+[21.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/build/action_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lydia-chheng/ros2_ws/build/action_interface
+[21.079s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface' for CMake config files
+[21.080s] Level 1:colcon.colcon_core.shell:create_environment_hook('action_interface', 'cmake_prefix_path')
+[21.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/cmake_prefix_path.ps1'
+[21.081s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/cmake_prefix_path.dsv'
+[21.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/cmake_prefix_path.sh'
+[21.082s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/lib'
+[21.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('action_interface', 'ld_library_path_lib')
+[21.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/ld_library_path_lib.ps1'
+[21.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/ld_library_path_lib.dsv'
+[21.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/ld_library_path_lib.sh'
+[21.084s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/bin'
+[21.084s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/lib/pkgconfig/action_interface.pc'
+[21.085s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/lib/python3.10/site-packages'
+[21.085s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/bin'
+[21.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.ps1'
+[21.086s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.dsv'
+[21.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.sh'
+[21.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.bash'
+[21.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.zsh'
+[21.089s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lydia-chheng/ros2_ws/install/action_interface/share/colcon-core/packages/action_interface)
+[21.090s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(action_interface)
+[21.090s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface' for CMake module files
+[21.091s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface' for CMake config files
+[21.092s] Level 1:colcon.colcon_core.shell:create_environment_hook('action_interface', 'cmake_prefix_path')
+[21.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/cmake_prefix_path.ps1'
+[21.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/cmake_prefix_path.dsv'
+[21.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/cmake_prefix_path.sh'
+[21.094s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/lib'
+[21.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('action_interface', 'ld_library_path_lib')
+[21.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/ld_library_path_lib.ps1'
+[21.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/ld_library_path_lib.dsv'
+[21.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/hook/ld_library_path_lib.sh'
+[21.096s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/bin'
+[21.096s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/lib/pkgconfig/action_interface.pc'
+[21.097s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/lib/python3.10/site-packages'
+[21.097s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/action_interface/bin'
+[21.097s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.ps1'
+[21.098s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.dsv'
+[21.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.sh'
+[21.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.bash'
+[21.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/action_interface/share/action_interface/package.zsh'
+[21.101s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lydia-chheng/ros2_ws/install/action_interface/share/colcon-core/packages/action_interface)
+[22.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lydia-chheng/ros2_ws/build/test_custom_msg_srv -- -j4 -l4
+[22.164s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lydia-chheng/ros2_ws/build/test_custom_msg_srv
+[22.283s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lydia-chheng/ros2_ws/build/test_custom_msg_srv' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lydia-chheng/ros2_ws/build/test_custom_msg_srv
+[22.284s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_msg_srv)
+[22.284s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv' for CMake module files
+[22.285s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv' for CMake config files
+[22.287s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib'
+[22.288s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_msg_srv', 'ld_library_path_lib')
+[22.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/hook/ld_library_path_lib.ps1'
+[22.289s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/hook/ld_library_path_lib.dsv'
+[22.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/hook/ld_library_path_lib.sh'
+[22.291s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/bin'
+[22.291s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/pkgconfig/test_custom_msg_srv.pc'
+[22.291s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/lib/python3.10/site-packages'
+[22.292s] Level 1:colcon.colcon_core.environment:checking '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/bin'
+[22.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/package.ps1'
+[22.294s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/package.dsv'
+[22.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/package.sh'
+[22.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/package.bash'
+[22.296s] INFO:colcon.colcon_core.shell:Creating package script '/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/test_custom_msg_srv/package.zsh'
+[22.297s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lydia-chheng/ros2_ws/install/test_custom_msg_srv/share/colcon-core/packages/test_custom_msg_srv)
+[22.298s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[22.298s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[22.299s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[22.299s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[22.312s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[22.312s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[22.312s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[22.344s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[22.345s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lydia-chheng/ros2_ws/install/local_setup.ps1'
+[22.348s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lydia-chheng/ros2_ws/install/_local_setup_util_ps1.py'
+[22.353s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lydia-chheng/ros2_ws/install/setup.ps1'
+[22.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lydia-chheng/ros2_ws/install/local_setup.sh'
+[22.358s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lydia-chheng/ros2_ws/install/_local_setup_util_sh.py'
+[22.360s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lydia-chheng/ros2_ws/install/setup.sh'
+[22.363s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lydia-chheng/ros2_ws/install/local_setup.bash'
+[22.365s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lydia-chheng/ros2_ws/install/setup.bash'
+[22.367s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lydia-chheng/ros2_ws/install/local_setup.zsh'
+[22.368s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lydia-chheng/ros2_ws/install/setup.zsh'

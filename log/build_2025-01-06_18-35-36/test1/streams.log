@@ -1,0 +1,37 @@
+[3.192s] Invoking command in '/home/lydia-chheng/ros2_ws/src/test1': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test1 build --build-base /home/lydia-chheng/ros2_ws/build/test1/build install --record /home/lydia-chheng/ros2_ws/build/test1/install.log --single-version-externally-managed install_data
+[4.464s] /home/lydia-chheng/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[4.464s]   warnings.warn(msg)
+[5.504s] running egg_info
+[5.696s] creating ../../build/test1/test1.egg-info
+[5.696s] writing ../../build/test1/test1.egg-info/PKG-INFO
+[5.696s] writing dependency_links to ../../build/test1/test1.egg-info/dependency_links.txt
+[5.697s] writing entry points to ../../build/test1/test1.egg-info/entry_points.txt
+[5.697s] writing requirements to ../../build/test1/test1.egg-info/requires.txt
+[5.697s] writing top-level names to ../../build/test1/test1.egg-info/top_level.txt
+[5.697s] writing manifest file '../../build/test1/test1.egg-info/SOURCES.txt'
+[6.037s] reading manifest file '../../build/test1/test1.egg-info/SOURCES.txt'
+[6.037s] adding license file 'LICENSE'
+[6.044s] writing manifest file '../../build/test1/test1.egg-info/SOURCES.txt'
+[6.049s] running build
+[6.049s] running build_py
+[6.049s] creating /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1
+[6.049s] copying test1/__init__.py -> /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1
+[6.052s] copying test1/test_node.py -> /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1
+[6.053s] running install
+[6.107s] running install_lib
+[6.272s] creating /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1
+[6.273s] copying /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1/__init__.py -> /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1
+[6.276s] copying /home/lydia-chheng/ros2_ws/build/test1/build/lib/test1/test_node.py -> /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1
+[6.279s] byte-compiling /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1/__init__.py to __init__.cpython-310.pyc
+[6.280s] byte-compiling /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1/test_node.py to test_node.cpython-310.pyc
+[6.281s] running install_data
+[6.290s] creating /home/lydia-chheng/ros2_ws/install/test1/share/ament_index/resource_index/packages
+[6.290s] copying resource/test1 -> /home/lydia-chheng/ros2_ws/install/test1/share/ament_index/resource_index/packages
+[6.290s] creating /home/lydia-chheng/ros2_ws/install/test1/share/test1
+[6.290s] copying package.xml -> /home/lydia-chheng/ros2_ws/install/test1/share/test1
+[6.290s] running install_egg_info
+[6.464s] Copying ../../build/test1/test1.egg-info to /home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages/test1-0.0.0-py3.10.egg-info
+[6.465s] running install_scripts
+[7.802s] Installing test_node script to /home/lydia-chheng/ros2_ws/install/test1/lib/test1
+[7.806s] writing list of installed files to '/home/lydia-chheng/ros2_ws/build/test1/install.log'
+[8.041s] Invoked command in '/home/lydia-chheng/ros2_ws/src/test1' returned '0': PYTHONPATH=/home/lydia-chheng/ros2_ws/build/test1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lydia-chheng/ros2_ws/install/test1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/test1 build --build-base /home/lydia-chheng/ros2_ws/build/test1/build install --record /home/lydia-chheng/ros2_ws/build/test1/install.log --single-version-externally-managed install_data

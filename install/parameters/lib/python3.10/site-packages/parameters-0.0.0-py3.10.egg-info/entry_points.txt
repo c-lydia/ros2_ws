@@ -1,0 +1,2 @@
+[console_scripts]
+parameters = parameters.parameters:main
