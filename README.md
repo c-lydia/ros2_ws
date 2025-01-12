@@ -599,12 +599,32 @@ This commans call the service
     ros2 service call <service name> <service type> <arguments>
 ```
 
-We tru this on the /spawn service 
+We try this on the /spawn service 
 ``` bash
     ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: ''}"
 ```
 
 ### Actions 
+#### What is action?
+
+#### Using action
+* Set up
+
+* Use action
+
+* ros2 node info
+
+* ros2 action list
+
+* ros2 action list -t
+
+* ros2 action info
+
+* ros2 interface show
+
+* ros2 send_goal
+
+
 
 ### Parameters 
 
