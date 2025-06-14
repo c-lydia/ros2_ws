@@ -53,7 +53,7 @@ ros2_ws/
 
 Before building, make sure to source ROS2: 
 ``` bash
-soruce /opt/ros/humble/setup.bash
+source /opt/ros/humble/setup.bash
 ```
 
 ## Package Overview 
